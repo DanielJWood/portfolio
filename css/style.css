@@ -1,0 +1,125 @@
+ #master_container {
+    font-family: 'futura-pt',sans-serif;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+ }
+
+.row .white-text    {
+    color: #fff !important;
+}
+
+/*Typography*/
+.row h1, .row h2, .row h3, .row h4, .row h5 {
+    color:#000;
+    text-transform: uppercase;
+    line-height: normal;
+    font-family: 'futura-pt',sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.serif {
+    font-family: "Georgia Cava",Georgia,serif !important;
+    text-transform: none !important;
+    font-style: italic !important;
+}
+
+.row h1 {
+    letter-spacing: .2rem;
+}
+
+.row h2 {
+    letter-spacing: .2rem;
+}
+
+.row h3 {
+    letter-spacing: .2rem;
+}
+
+.row h4 {
+}
+
+.row h5 {
+}
+
+.row h4.serif {
+    letter-spacing: .1rem;
+    line-height: 110%;
+}
+
+/*Elements*/
+
+#title {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 40.063em) { 
+    .row h1 {
+        /*font-size: 40px;    */
+        font-size: 2.8rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h2 {
+        /*font-size: 32px;*/
+        font-size: 2rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h3 {
+        /*font-size: 26px;*/
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h4 {
+        /*font-size: 20px;*/
+        font-size: 1.2rem;
+    }
+
+    .row h5 {
+        font-size: 16px;
+        font-size: 1rem; 
+    }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) { 
+} /* min-width 1025px, large screens */
+
+
+@media only screen and (max-width: 480px) { 
+    .row h2 {
+        /*font-size: 30px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        letter-spacing: .05rem;*/
+    }
+    .row h3 {
+        /*font-size: 16px;
+        margin-top: .25rem;
+        margin-bottom: .25rem;*/
+    }
+    .row .inner-text {
+        /*font-size: 18px !important;
+        line-height: 18px !important; 
+        letter-spacing: 0rem;*/
+    }
+}
+
+
+@media only screen and (max-width: 320px) { 
+    .row h1 {
+        /*font-size: 28px*/
+    }
+    .row h2 {
+        /*font-size: 26px;*/
+    }
+}
