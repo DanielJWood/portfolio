@@ -2,7 +2,7 @@
     font-family: 'futura-pt',sans-serif;
     position: relative;
     width: 100%;
-    background-color: #000;
+    background-color: transparent;
  }
 
 .row .white-text    {
@@ -56,10 +56,83 @@
 
 /*Elements*/
 
-#title {
-    text-align: center;
+#topLogo {
+    position: fixed;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    z-index: 30;
 }
 
+#topLogo img {
+    margin: 0 auto !important;
+    width: 15%;
+    min-width: 100px;
+    display: block;
+}
+
+#title {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    margin-top: 25%;
+    z-index: 30;
+}
+#savor-container {
+    position: relative;
+    left: 0px;
+    top: 500px;
+}
+
+#savor {    
+    width: 100%;
+    height: 0;
+    padding-left:0%;
+    padding-bottom: 50%;
+    overflow: hidden;
+    position: absolute;
+    background-color: transparent;
+    top: 200px;
+    z-index: 52;
+}
+#savor-text {
+    position: absolute;
+    top: 30%;
+    /*background-color: pink;*/
+    /*width: 1000px !important;*/
+    padding-left: 5%;
+    z-index: 51;
+}
+
+.triangle-top {
+    width: 0; 
+    /*height: 100px;*/
+    margin-left:-1000px;
+    border-left:1000px solid transparent;
+    border-right: 2000px solid transparent;
+    border-bottom: 1000px solid #000;
+}
+
+#savor-bottom {
+    width: 100%;
+    height: 0;
+    padding-left:0%;
+    padding-bottom: 50%;
+    overflow: hidden;
+    position: relative;
+    /*clear: both;*/
+    background-color: transparent;
+    top: 725px;
+    z-index: 53;
+}
+
+.triangle-bottom {
+    width: 0; 
+    /*height: 100px;*/
+    margin-left:-1000px;
+    border-left:1000px solid transparent;
+    border-right: 2000px solid #000;
+    border-bottom: 1000px solid #f6a11e;
+}
 
 @media only screen and (min-width: 40.063em) { 
     .row h1 {
