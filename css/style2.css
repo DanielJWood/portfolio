@@ -149,9 +149,33 @@
     border-bottom: 1000px solid #f6a11e;
 }
 
+.line1 {
+    width: 223%;
+    border-top: 1px solid #fff;
+    -webkit-transform: translateY(0px) translateX(0px) rotate(-26.5651deg);
+    position: absolute;
+    top: 0px;
+    margin-left: -20.5%;
+    margin-top: 4.5%;
+}
+
+.line2 {
+    width: 223.6%;
+    border-top: 1px solid #f6a11e;
+    -webkit-transform: translateY(0px) translateX(0px) rotate(26.5651deg);
+    position: absolute;
+    top: 0px;
+    margin-left: -111.8%;
+    margin-top: 0;
+}
+
+.orange {
+    border-top: 1px solid #f6a11e;
+}
+
 #savor-bottom-box {
     width: 100%;
-    position: absolute; /*switch to relative on mobile*/
+    position: relative; /*switch to relative on mobile*/
     height: 500px;
     background-color: #f6a11e;    
 }
@@ -161,16 +185,87 @@
     height: 0;
     padding-left:0%;
     padding-top: 50%;
-    margin-top: -10%;
+    /*margin-top: -10%;*/
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    z-index: 530;
+
+}
+
+#orange-bottom-triangle {
+    width: 0; 
+    margin-top:-1000px;
+    border-right: 2000px solid transparent;
+    border-top: 1000px solid #f6a11e;   
+}
+
+#relate-cont {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    left: -15%;
+}
+
+#relate {
+    margin-top: -39%;
+    width: 153%;
+    height: 0;
+    background: url(../files/pngs/08_closeupFood.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: rotate(-16deg);
+    -moz-transform: rotate(-16deg);
+    -ms-transform: rotate(-16deg);
+    -o-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+    /*padding-top: 220.3%;*/
+    padding-top: 125%;
+}
+#health-cont, #our-food-cont {
+    position: relative;
+    width: 100%;
+    height: auto;
+    height: 100px;
+    z-index: 100;
+    margin-top: -54%;
+    /*background-color: pink;*/
+}
+
+#health-tri-box{
+    width: 100%;
+    height: 0;
+    padding-left:0%;
+    padding-top: 50%;
+    /*margin-top: -10%;*/
     overflow: hidden;
     position: relative;
     background-color: transparent;
     z-index: 530;
 }
 
-#orange-bottom-triangle {
+#health-triangle-top {
     width: 0; 
     margin-top:-1000px;
     border-right: 2000px solid #fff;
-    border-top: 1000px solid transparent;   
+    border-top: 1000px solid transparent;  
 }
+#health{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-color: #fff;     
+}
+
+#our-food {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-color: #fff;     
+}
+
+#our-food-cont {
+    margin-top: 0px;
+}
+
