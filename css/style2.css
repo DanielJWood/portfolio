@@ -223,11 +223,11 @@
     /*padding-top: 220.3%;*/
     padding-top: 125%;
 }
-#health-cont, #our-food-cont {
+#health-cont {
     position: relative;
     width: 100%;
     height: auto;
-    height: 100px;
+    /*height: 100px;*/
     z-index: 100;
     margin-top: -54%;
     /*background-color: pink;*/
@@ -238,7 +238,6 @@
     height: 0;
     padding-left:0%;
     padding-top: 50%;
-    /*margin-top: -10%;*/
     overflow: hidden;
     position: relative;
     background-color: transparent;
@@ -251,21 +250,89 @@
     border-right: 2000px solid #fff;
     border-top: 1000px solid transparent;  
 }
-#health{
+#health {
     width: 100%;
     position: relative;
-    height: 300px;
+    height: 200px;
     background-color: #fff;     
+}
+
+#our-food-cont {    
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 100;
 }
 
 #our-food {
     width: 100%;
     position: relative;
-    height: 300px;
+    height:500px;
     background-color: #fff;     
 }
-
-#our-food-cont {
-    margin-top: 0px;
+#l3 {
+    margin-top: 25%;
 }
 
+#locations-cont, #partners-cont, #partners-bottom-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 90;
+}
+
+#locations-line {
+    width: 100%;
+    position: relative;
+    height: 1000px;
+    background-color: #fff;        
+}
+
+#locations-box {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background-color: #fff;   
+    z-index: -10        
+}
+
+#l4 {
+    border-top: none !important;
+    height: 20px;
+    background:
+    linear-gradient(
+      rgba(246, 161, 30, 0.3),
+      rgba(246, 161, 30, 0.3)
+    ),url(../files/pngs/18_orangeStripes.png);
+    background-repeat: repeat;
+    /*z-index: 110;*/
+    top: 50%;
+}
+
+#partners {
+    /*position: absolute;*/
+    /*margin-top: -35%;*/
+    width: 100%;
+    height: 0;
+    background:url(../files/pngs/27_partners_cactusBackground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 169.3%;
+    float: left;
+}
+
+#partners-bottom-container {
+    margin-top: -40%;
+    z-index: 200;
+}
+
+#partners-bottom {
+    width: 200%;
+    position: relative;
+    /* height: 400px; */
+    height: 500px;
+    background-color: transparent;
+    background: url(../files/pngs/44_blackBar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
