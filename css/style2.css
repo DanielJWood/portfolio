@@ -274,7 +274,7 @@
     margin-top: 25%;
 }
 
-#locations-cont, #partners-cont, #partners-bottom-container {
+#locations-cont, #partners-cont, #where-container {
     position: relative;
     width: 100%;
     height: auto;
@@ -305,13 +305,10 @@
       rgba(246, 161, 30, 0.3)
     ),url(../files/pngs/18_orangeStripes.png);
     background-repeat: repeat;
-    /*z-index: 110;*/
     top: 50%;
 }
 
 #partners {
-    /*position: absolute;*/
-    /*margin-top: -35%;*/
     width: 100%;
     height: 0;
     background:url(../files/pngs/27_partners_cactusBackground.png);
@@ -321,7 +318,7 @@
     float: left;
 }
 
-#partners-bottom-container {
+#where-container {
     margin-top: -40%;
     z-index: 200;
 }
@@ -329,10 +326,74 @@
 #partners-bottom {
     width: 200%;
     position: relative;
-    /* height: 400px; */
     height: 500px;
     background-color: transparent;
     background: url(../files/pngs/44_blackBar.png);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+#where-box, #where-bottom-box {
+    width: 100%;
+    height: 0;
+    padding-left:0%;
+    padding-top: 18%;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    z-index: 530;
+}
+
+#where-triangle-top {
+    width: 0; 
+    margin-top:-240px;
+    border-right: 2000px solid #000;
+    border-top: 240px solid transparent;  
+}
+
+#where {
+    width: 100%;
+    position: relative;
+    height: 50px;
+    background-color: #000;     
+}
+
+#where-bottom-triangle {
+    width: 0; 
+    margin-top:-240px;
+    border-right: 2000px solid transparent;
+    border-top: 240px solid #000;
+}
+
+#farm-container, #map-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 100;    
+}
+
+#farm {
+    margin-top: -14%;
+    width: 100%;
+    height: 0;
+    background: url(../files/pngs/45_farmBackground.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 66.8%;
+    float: left;
+}
+
+#map-container {
+    z-index: 101;
+}
+
+#map {
+    margin-top: -12%;
+    width: 100%;
+    height: 0;
+    background: url(../files/pngs/47_mapCalifornia.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100%;
+    float: left;   
 }
