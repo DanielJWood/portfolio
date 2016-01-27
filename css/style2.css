@@ -477,11 +477,16 @@
     margin-top: 25%;
 }
 
+#l4 {
+    display: block;
+}
+
 #locations-line {
     width: 100%;
     position: relative;
-    height: 1000px;
-    background-color: #fff;        
+    height: 430px;
+    background-color: #fff;
+    margin-top: -30%;
 }
 
 #locations-box {
@@ -489,7 +494,15 @@
     position: relative;
     height: 400px;
     background-color: #fff;   
-    z-index: -10        
+    z-index: -10;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#locations-box h2 {
+/*position: absolute;
+   top: -10px;
+   z-index: */
 }
 
 #l4 {
@@ -512,7 +525,20 @@
     background-size: contain;
     padding-top: 169.3%;
     float: left;
+    /*margin-top: -20%;*/
+    z-index: -10;
 }
+
+#partners-text {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    padding-top: 55%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 #where-container {
     margin-top: -40%;
