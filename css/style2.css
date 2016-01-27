@@ -174,7 +174,8 @@
 #cook-container,
 #farm-container, 
 #map-container, 
-#hop-container {
+#hope-container,
+#bubbles-cont {
     position: relative;
     width: 100%;
     height: auto;
@@ -416,10 +417,57 @@
     /*height:300px;*/
     padding-top: 22%;
     padding-bottom: 1px;
-    background-color: #fff;     
+    background-color: #fff;   
+    text-align: center;
+    /*width: 50%;  */
 }
 
-/*#our-food h3    */
+#bubbles-cont {
+    width: 100%;
+    /*background-color: #fff;*/
+    overflow: visible;
+    z-index: 1000;
+}
+
+#bubbles {
+    width: 70%;
+    position: relative;
+    /*background-color: #fff;     */
+    /*height: 500px;*/
+    text-align: center;
+    z-index: 531;
+    padding-bottom: 1px;
+    margin:0 auto;
+    padding-top: 80%;
+    overflow: visible;
+}
+
+.bubble {
+    position: absolute;
+    z-index: 100000;
+}
+
+.bubble img {
+    width: 100%;
+    z-index: 4000;
+}
+
+#bub1 {left: 10%;top: 5%; width: 30%; }
+
+#bub2 {top:0;right: 0%;width: 50%;
+}
+#bub3 {left: 20%;top: 35%; width: 30%; }
+#bub4 {right: 15%;top: 50%; width: 35%; }
+#bub5 {left: 25%;top: 75%; width: 25%;  }
+
+#vibrant2 {
+    position: absolute;
+    top: -50px;
+    left: -150px;
+    width: 200%;
+    overflow:visible;
+    display: none;
+}
 
 #l2 {
     margin-top: -11.5%;
@@ -503,7 +551,7 @@
     border-top: 240px solid #000;
 }
 
-#farm-container, #map-container, #hop-container {
+#farm-container, #map-container, #hope-container {
     z-index: 100;    
 }
 
@@ -671,7 +719,8 @@
         font-size: 1rem; 
     }
 
-    #wb1, .line1, .wb2, #bg0, #relate0 {display:block;}
+    #vibrant1 {display: none;}
+    #wb1, .line1, .wb2, #bg0, #relate0, #vibrant2 {display:block;}
     #bg1,#relate {
         background: transparent;
     }
