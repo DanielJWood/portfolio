@@ -152,6 +152,7 @@
     background-color: transparent;
  }
 
+#bg0-cont,
 #bg1-cont,
 #our-food-cont,
 #savor-container, 
@@ -169,16 +170,31 @@
     z-index: 90;
 }
 
+#bg0-cont{
+    z-index: 0;
+}
+
 #bg1-cont {
     z-index: 1;
 }
 
-#bg1 {
-    /*position: fixed;*/
-    margin-top: -35%;
+#bg0 {
+    position: fixed;
+    margin-top: -50%;
     width: 100%;
     height: 0;
     background:url(../files/pngs/02_laSkyline.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 149.8%;
+    float: left;
+}
+
+#bg1 {
+    margin-top: -35%;
+    width: 100%;
+    height: 0;
+    /*background:url(../files/pngs/02_laSkyline.jpg);*/
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 149.8%;
