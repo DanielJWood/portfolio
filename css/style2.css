@@ -42,28 +42,139 @@
     position:static;
 }
 
-/*div {
-    border: 1px solid #ff00ff;
-}*/
+/*TYPOGRAPHY*/
+.row .white-text    {
+    color: #fff !important;
+}
 
- #master_container {
+/*Typography*/
+.row h1, .row h2, .row h3, .row h4, .row h5 {
+    color:#000;
+    text-transform: uppercase;
+    line-height: normal;
+    font-family: 'futura-pt',sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.serif {
+    font-family: "Georgia Cava",Georgia,serif !important;
+    text-transform: none !important;
+    font-style: italic !important;
+}
+
+.row h1 {
+    letter-spacing: .2rem; font-size: 2.5rem;
+}
+
+.row h2 {
+    letter-spacing: .2rem;
+}
+
+.row h3 {
+    letter-spacing: .2rem;
+}
+
+.row h4 {
+}
+
+.row h5 {
+}
+
+.row h4.serif {
+    letter-spacing: .1rem;
+    line-height: 110%;
+}
+
+/*content elements*/
+
+#topLogo {
+    position: fixed;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    z-index: 30;
+}
+
+#topLogo img {
+    margin: 0 auto !important;
+    width: 15%;
+    min-width: 100px;
+    display: block;
+}
+
+#title {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    margin-top: 25%;
+    z-index: 30;
+}
+
+#savor-text {
+    position: absolute;
+    height: auto;
+    padding-top: 43%;
+    /*padding-left: 5%;*/
+    margin: 0 auto;
+    z-index: 1001;
+    top: 0;
+    text-align: center;
+}
+
+#flat {
+    position: absolute;
+    height: auto;
+    top: 0px;
+    z-index: 1000;
+    overflow: visible !important;
+    /*width: 1000px;*/
+    text-align: center;
+}
+
+#flat img {
+    z-index: 1000;
+    width: 100%;
+    max-width: 50%;
+}
+
+/*background*/
+
+#master_container {
     font-family: 'futura-pt',sans-serif;
     position: relative;
-    /*height: 1000px;*/
     width: 100%;
     background-color: transparent;
  }
 
-
-#bg1-cont {
+#bg1-cont,
+#our-food-cont,
+#savor-container, 
+#locations-cont, 
+#partners-cont, 
+#where-container, 
+#orange2-bar-container, 
+#cook-container,
+#farm-container, 
+#map-container, 
+#hop-container {
+    position: relative;
     width: 100%;
     height: auto;
-    position: relative;
+    z-index: 90;
+}
+
+#bg1-cont {
     z-index: 1;
 }
 
 #bg1 {
-    /*position: absolute;*/
+    /*position: fixed;*/
     margin-top: -35%;
     width: 100%;
     height: 0;
@@ -74,21 +185,7 @@
     float: left;
 }
 
-#title {
-    position: absolute;
-    text-align: center;
-    width: 100%;   
-    margin-top: 50%;
-    z-index: 300;
-}
-
-/*Elements*/
-
 #savor-container {    
-    position: relative;
-    width: 100%;
-    height: auto;
-    /*position: absolute;*/
     z-index: 100;
     margin-top: -55%;
 }
@@ -97,23 +194,14 @@
     width: 100%;
     height: 0;
     padding-left:0%;
-    padding-bottom: 50%;
+    padding-bottom: 100%;
     overflow: hidden;
-    /*position: absolute;*/
     background-color: transparent;
     z-index: 52;
 }
-/*#savor-text {
-    position: absolute;
-    top: 30%;
-    background-color: pink;
-    padding-left: 5%;
-    z-index: 51;
-}*/
 
 .triangle-top {
     width: 0; 
-    /*height: 100px;*/
     margin-left:-1000px;
     border-left:1000px solid transparent;
     border-right: 2000px solid transparent;
@@ -123,7 +211,7 @@
 #savor-box {
     width: 100%;
     position: relative;
-    height: 100px;
+    padding-top: 30%;
     background-color: #000;
 }
 
@@ -134,15 +222,12 @@
     padding-bottom: 50%;
     overflow: hidden;
     position: relative;
-    /*clear: both;*/
     background-color: transparent;
-    /*top: 725px;*/
-    z-index: 53;
+    z-index: 1000;
 }
 
 .triangle-bottom {
     width: 0; 
-    /*height: 100px;*/
     margin-left:-1000px;
     border-left:1000px solid transparent;
     border-right: 2000px solid #000;
@@ -157,6 +242,7 @@
     top: 0px;
     margin-left: -20.5%;
     margin-top: 4.5%;
+    display: none;
 }
 
 .line2 {
@@ -175,9 +261,10 @@
 
 #savor-bottom-box {
     width: 100%;
-    position: relative; /*switch to relative on mobile*/
-    height: 500px;
-    background-color: #f6a11e;    
+    position: relative;
+    height: 0px;
+    padding-top: 100%;
+    background-color: #f6a11e;  
 }
 
 #orange-bottom {
@@ -185,7 +272,6 @@
     height: 0;
     padding-left:0%;
     padding-top: 50%;
-    /*margin-top: -10%;*/
     overflow: hidden;
     position: relative;
     background-color: transparent;
@@ -227,10 +313,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    /*height: 100px;*/
     z-index: 100;
     margin-top: -54%;
-    /*background-color: pink;*/
 }
 
 #health-tri-box{
@@ -258,9 +342,6 @@
 }
 
 #our-food-cont {    
-    position: relative;
-    width: 100%;
-    height: auto;
     z-index: 100;
 }
 
@@ -272,13 +353,6 @@
 }
 #l3 {
     margin-top: 25%;
-}
-
-#locations-cont, #partners-cont, #where-container, #orange2-bar-container, #cook-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 90;
 }
 
 #locations-line {
@@ -366,9 +440,6 @@
 }
 
 #farm-container, #map-container, #hop-container {
-    width: 100%;
-    height: auto;
-    position: relative;
     z-index: 100;    
 }
 
@@ -486,4 +557,104 @@
     width: 100%;
     position: relative;
     height: 500px;
+}
+
+/*bars and stuff*/
+.white-bar {
+    height: 10px;
+    background-color: #fff;
+    margin-bottom: 5%;
+}
+
+#wb1 {
+    width: 30%;
+    display: none;
+}
+
+
+.wb2 {
+    width: 15% !important;
+    display: none;
+}
+
+
+@media only screen and (min-width: 40.063em) { 
+    .row h1 {
+        /*font-size: 40px;    */
+        font-size: 2.8rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h2 {
+        /*font-size: 32px;*/
+        font-size: 2rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h3 {
+        /*font-size: 26px;*/
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h4 {
+        /*font-size: 20px;*/
+        font-size: 1.2rem;
+    }
+
+    .row h5 {
+        font-size: 16px;
+        font-size: 1rem; 
+    }
+
+    #wb1, .line1, .wb2 {display:block;}
+    #savor {padding-bottom: 50%;}
+    #savor-text {padding-top: 20%;padding-left: 5%;text-align: left;}
+    #savor-box {padding-top: 30%;}
+    #savor-bottom-box {height: 0;padding-top: 0}
+    #flat {
+        padding-left: 5%;    
+        text-align: left;
+        /*position: relative;*/
+        margin-top: -30%;
+    }
+
+    #flat img {
+        max-width: 50%;
+    }
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) { 
+    #savor-box {padding-top: 9%;}
+} /* min-width 1025px, large screens */
+
+
+@media only screen and (max-width: 480px) { 
+    .row h2 {
+        /*font-size: 30px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        letter-spacing: .05rem;*/
+    }
+    .row h3 {
+        /*font-size: 16px;
+        margin-top: .25rem;
+        margin-bottom: .25rem;*/
+    }
+    .row .inner-text {
+        /*font-size: 18px !important;
+        line-height: 18px !important; 
+        letter-spacing: 0rem;*/
+    }
+}
+
+
+@media only screen and (max-width: 320px) { 
+    .row h1 {
+        /*font-size: 28px*/
+    }
+    .row h2 {
+        /*font-size: 26px;*/
+    }
 }
