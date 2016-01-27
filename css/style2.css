@@ -333,7 +333,7 @@
     margin-top: -39%;
     width: 153%;
     height: 0;
-    background: url(../files/pngs/08_closeupFood.jpg);
+    background: url(../files/pngs/closeupFood.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     -webkit-transform: rotate(-16deg);
@@ -350,7 +350,7 @@
     margin-top: -16%;
     width: 153%;
     height: 0;
-    background: url(../files/pngs/08_closeupFood.jpg);
+    background: url(../files/pngs/closeupFood.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     -webkit-transform: rotate(-16deg);
@@ -459,7 +459,7 @@
 #partners {
     width: 100%;
     height: 0;
-    background:url(../files/pngs/27_partners_cactusBackground.png);
+    background:url(../files/pngs/27_partners_cactusBackground_1500.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 169.3%;
@@ -469,16 +469,6 @@
 #where-container {
     margin-top: -40%;
     z-index: 200;
-}
-
-#partners-bottom {
-    width: 200%;
-    position: relative;
-    height: 500px;
-    background-color: transparent;
-    background: url(../files/pngs/44_blackBar.png);
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 #where-box, #where-bottom-box {
@@ -521,7 +511,7 @@
     margin-top: -14%;
     width: 100%;
     height: 0;
-    background: url(../files/pngs/45_farmBackground.png);
+    background: url(../files/pngs/45_farmBackground_1500.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 66.8%;
@@ -617,7 +607,7 @@
     margin-top: -12%;
     width: 100%;
     height: 0;
-    background: url(../files/pngs/Background_table.jpg);
+    background: url(../files/pngs/Background_table_2.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 78.6%;
