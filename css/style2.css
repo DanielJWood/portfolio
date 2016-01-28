@@ -529,14 +529,57 @@
     z-index: -10;
 }
 
-#partners-text {
+#partners-text-bubs {
     position: absolute;
     width: 100%;
     height: auto;
     top: 0;
-    padding-top: 55%;
+    padding-top: 0%;
     margin: 0 auto;
     text-align: center;
+}
+
+#partners-bubbles {
+    
+    /*position: relative;*/
+    margin-top: 25px;
+}
+
+.halves {
+    
+
+}
+
+.partner-bub {
+    float: left;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+#pbub1 {background:url(../files/pngs/31_partners_sugarbloom_noHover.png);}
+#pbub1:hover {background:url(../files/pngs/30_partners_sugarbloom_Hover.png);}
+#pbub2 {background:url(../files/pngs/33_partners_gsf_noHover.png)}
+#pbub2:hover {background:url(../files/pngs/32_partners_gsf_Hover.png)}
+#pbub3 {background:url(../files/pngs/36_partners_chefs_noHover.png)}
+#pbub3:hover {background:url(../files/pngs/35_partners_chefs_Hover.png)}
+#pbub4 {background:url(../files/pngs/40_partners_laKitchen_noHover.png)}
+#pbub4:hover {background:url(../files/pngs/38_partners_laKitchen_Hover.png)}
+#pbub5 {background:url(../files/pngs/43_partners_HB_noHover.png)}
+#pbub5:hover {background:url(../files/pngs/41_partners_HB_Hover.png)}
+
+
+#pbub1,
+#pbub2,
+#pbub3,
+#pbub4,
+#pbub5 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /*float: left;*/
+    z-index: 100;
+    background-repeat: no-repeat;
+    background-size: auto 100% !important;
 }
 
 
@@ -767,7 +810,9 @@
     #meaningful {
         margin-top: -20%;
     }
-
+    #partners-text-bubs {
+        margin-top: 50%;
+    }
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 64.063em) { 
