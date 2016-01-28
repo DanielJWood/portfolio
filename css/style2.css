@@ -48,7 +48,7 @@
 }
 
 /*Typography*/
-.row h1, .row h2, .row h3, .row h4, .row h5 {
+.row h1, .row h2, .row h3, .row h4, .row h5, p {
     color:#000;
     text-transform: uppercase;
     line-height: normal;
@@ -554,6 +554,7 @@
     float: left;
     height: 100px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 #pbub1 {background:url(../files/pngs/31_partners_sugarbloom_noHover.png);}
@@ -574,14 +575,51 @@
 #pbub4,
 #pbub5 {
     width: 100px;
-    height: 100px;
+    height: 100%;
     margin: 0 auto;
     /*float: left;*/
     z-index: 100;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: auto 100% !important;
 }
 
+#partner-info-cont {
+    margin-top: 20%;
+    position: relative;
+}
+
+#partner-info {
+    background-color: rgb(50,50,50);
+    background-color: rgba(0,0,0,0.6);
+    text-align: left;
+    padding: 20px;
+    padding-right: 20%;
+    padding-bottom: 7px;
+    float: right;
+    height: 200px;
+    position: absolute;
+    overflow: scroll;
+    z-index: 10;
+    right: 100px;
+
+}
+
+#partner-pic {
+    height: 200px;
+    width: 200px;
+    float: right;
+    position: relative;
+    z-index: 11;
+}
+
+#partner-info h4 {
+    letter-spacing: .3rem;
+}
+
+#partner-info p {
+    font-size: 0.9rem;
+    line-height: 130%;
+}
 
 #where-container {
     margin-top: -40%;
@@ -611,6 +649,25 @@
     position: relative;
     height: 50px;
     background-color: #000;     
+}
+
+#where-sub {
+    background-color: #000;
+    z-index: 1000;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -20%;
+}
+
+#wb3 {
+    width: 30%;
+}
+
+
+#where-bottom-box {
+    overflow: visible;
 }
 
 #where-bottom-triangle {
@@ -784,7 +841,7 @@
     }
 
     .row h5 {
-        font-size: 16px;
+        /*font-size: 16px;*/
         font-size: 1rem; 
     }
 
@@ -813,10 +870,41 @@
     #partners-text-bubs {
         margin-top: 50%;
     }
+    #pbub1,
+    #pbub2,
+    #pbub3,
+    #pbub4,
+    #pbub5 {
+        width: 90%;
+        padding-top: 90%;
+    }
+    .partner-bub {
+        float: left;        
+        margin-bottom: 20px;
+        height: 0px;
+    }
+    .halves {
+        float: left;
+    }
+    #where-sub {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: -10%;
+    }
+
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 64.063em) { 
     #savor-box {padding-top: 9%;}
+    #where-sub {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: -10%;
+    }
 } /* min-width 1025px, large screens */
 
 
