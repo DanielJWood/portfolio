@@ -546,7 +546,6 @@
 }
 
 .halves {
-    
 
 }
 
@@ -714,6 +713,8 @@
 
 #dips-img-cont {
     position: relative;
+    height: 0;
+    padding-top: 100%;
 }
 
 #dips-img-cont img {
@@ -723,12 +724,12 @@
     transform: translate(-50%, -50%);
     /*max-width: 500px;*/
     width: 100%;
-    margin-top: 50%;
+    margin-top: -70%;
 }
 
 #orange2-bar-container {
     margin-top: -90%;
-    z-index: 0;
+    z-index: -10;
 }
 
 #orange2-box, #orange2-bottom-box {
@@ -772,12 +773,21 @@
     z-index: 531;       
 }
 #cook {
-    width: 100%;
-    position: relative;
     padding-top: 20%;
     background-color: #fff; 
-    /*margin-top: -20%;*/
-    z-index: 531;          
+    padding-bottom: 15%;
+    z-index: 531;
+}
+
+#cook-photo img {
+    width: 100%;
+    max-width: 500px;
+}
+
+#cook-container {
+    margin-top: -15%;
+    z-index: 0;
+    /*background-color: #fff;*/
 }
 
 #cook-box {
@@ -785,7 +795,8 @@
     height: 0;
     padding-left:0%;
     padding-top: 10%;
-    overflow: visible;
+    /*overflow: visible;*/
+    overflow: hidden;
     position: relative;
     background-color: transparent;
     z-index: 530;
@@ -802,19 +813,20 @@
 
 #hope-container {
     margin-top: -15%;
+    z-index: -100;
 }
 
 #hope-text {
     border: 20px solid white;
-    margin-top: -80%;
+    margin-top: -75%;
     padding: 30px;
-    padding-top: 60px;
+    padding-top: 15%;
     text-align: center;
 
 }
 
 #hope {
-    margin-top: -12%;
+    /*margin-top: -12%;*/
     width: 100%;
     height: 0;
     background: url(../files/pngs/Background_table_2.jpg);
@@ -825,13 +837,67 @@
     z-index: 500; 
 }
 
+#wb4 {
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#footer-image {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
 #footer {
     background-color: #000;
     z-index: 650;  
-    width: 100%;
     position: relative;
     height: 500px;
 }
+
+#footer-text {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.foot-bub {
+    float: left;
+    height: 100px;
+    margin-bottom: 20px;
+    /*border: 1px solid aqua;*/
+}
+
+#fbimg1 {background:url(../files/pngs/54_footer_fundraisers.png);}
+#fbimg1:hover {background:url(../files/pngs/54_footer_fundraisers.png);}
+#fbimg2 {background:url(../files/pngs/55_footer_careers.png)}
+#fbimg2:hover {background:url(../files/pngs/55_footer_careers.png)}
+#fbimg3 {background:url(../files/pngs/56_footer_instagram.png)}
+#fbimg3:hover {background:url(../files/pngs/56_footer_instagram.png)}
+#fbimg4 {background:url(../files/pngs/57_footer_email.png)}
+#fbimg4:hover {background:url(../files/pngs/57_footer_email.png)}
+
+
+#fbimg1,
+#fbimg2,
+#fbimg3,
+#fbimg4
+{
+    /*border: 1px solid #ff00ff;*/
+    width: 100px;
+    cursor: pointer;
+    height: 100%;
+    margin: 0 auto;
+    /*float: left;*/
+    z-index: 100;
+    background-repeat: no-repeat !important;
+    background-size: auto 100% !important;
+}
+
+.foot-bub-text {
+    padding-top: 5px;
+    text-align: center;
+}
+
 
 /*bars and stuff*/
 .white-bar {
