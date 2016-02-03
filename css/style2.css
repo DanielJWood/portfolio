@@ -424,7 +424,7 @@
 
 #bubbles-cont {
     width: 100%;
-    /*background-color: #fff;*/
+    background-color: #fff;
     overflow: visible;
     z-index: 1000;
 }
@@ -470,15 +470,22 @@
 }
 
 #l2 {
-    margin-top: -11.5%;
+    margin-top: -40.5%;
+    margin-left: -33.5%
 }
 
 #l3 {
-    margin-top: 25%;
+    margin-top: 10%;
+    margin-left: -89%;
 }
 
 #l4 {
     display: block;
+    margin-left: -33.5%;
+}
+
+#locations-cont {
+    background-color: #fff;
 }
 
 #locations-line {
@@ -496,7 +503,7 @@
     background-color: #fff;   
     z-index: -10;
     text-align: center;
-    margin-top: 10%;
+    /*margin-top: 10%;*/
 }
 
 #locations-box h2 {
