@@ -554,19 +554,8 @@
     height: 100px;
     margin-bottom: 20px;
     cursor: pointer;
+    /*border: 1px solid aqua;*/
 }
-
-#pbub1 {background:url(../files/pngs/31_partners_sugarbloom_noHover.png);}
-#pbub1:hover {background:url(../files/pngs/30_partners_sugarbloom_Hover.png);}
-#pbub2 {background:url(../files/pngs/33_partners_gsf_noHover.png)}
-#pbub2:hover {background:url(../files/pngs/32_partners_gsf_Hover.png)}
-#pbub3 {background:url(../files/pngs/36_partners_chefs_noHover.png)}
-#pbub3:hover {background:url(../files/pngs/35_partners_chefs_Hover.png)}
-#pbub4 {background:url(../files/pngs/40_partners_laKitchen_noHover.png)}
-#pbub4:hover {background:url(../files/pngs/38_partners_laKitchen_Hover.png)}
-#pbub5 {background:url(../files/pngs/43_partners_HB_noHover.png)}
-#pbub5:hover {background:url(../files/pngs/41_partners_HB_Hover.png)}
-
 
 #pbub1,
 #pbub2,
@@ -578,9 +567,43 @@
     margin: 0 auto;
     /*float: left;*/
     z-index: 100;
+    background: url(../files/pngs/partners_icons-01.png);
     background-repeat: no-repeat !important;
-    background-size: auto 100% !important;
+    background-size: 505%;
+    /*border: 1px solid #ff00ff;*/
 }
+
+#pbub1.active,#pbub1:hover {
+    background-position: 0 0;
+}
+#pbub1 {
+    background-position: 0 101.5%;
+}
+#pbub2.active,#pbub2:hover {
+    background-position: 25% 0;
+}
+#pbub2 {
+    background-position: 25% 101.5%;
+}
+#pbub3.active,#pbub3:hover {
+    background-position: 50% 0;
+}
+#pbub3 {
+    background-position: 50% 101.5%;
+}
+#pbub4.active,#pbub4:hover {
+    background-position: 75% 0;
+}
+#pbub4 {
+    background-position: 75% 101.5%;
+}
+#pbub5.active,#pbub5:hover {
+    background-position: 100% 0;
+}
+#pbub5 {
+    background-position: 100% 101.5%;
+}
+
 
 #partner-info-cont {
     margin-top: 20%;
@@ -597,7 +620,7 @@
     float: right;
     height: 200px;
     position: absolute;
-    overflow: scroll;
+    /*overflow: scroll;*/
     z-index: 10;
     right: 100px;
 
