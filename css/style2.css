@@ -96,8 +96,8 @@
 
 #topLogo {
     position: fixed;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 8%;
+    margin-bottom: 8%;
     z-index: 30;
 }
 
@@ -161,6 +161,8 @@
     position: relative;
     width: 100%;
     background-color: transparent;
+    max-width: 1300px;
+    margin: 0 auto;
  }
 
 #bg0-cont,
@@ -463,7 +465,7 @@
     position: absolute;
     top: -50px;
     left: -150px;
-    width: 200%;
+    /*width: 200%;*/
     overflow:visible;
     display: none;
 }
@@ -1128,7 +1130,8 @@
 
     #partner-info {
         padding-right: 20%;
-        right: 100px;        
+        right: 100px;  
+        margin-top: 0px !important;      
     }
 
     #partners-text-bubs {
@@ -1148,7 +1151,7 @@
         height: 0px;
     }
     #partners-cont {
-        margin-top: -5%;
+        margin-top: -1%;
     }
 
     .halves {
