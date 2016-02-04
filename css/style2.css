@@ -661,9 +661,11 @@
     margin: 0 auto;
     /*float: left;*/
     z-index: 100;
+    /*background-color: #ff00ff;*/
     background: url(../files/pngs/partners_icons-01.png);
     background-repeat: no-repeat !important;
     background-size: 505%;
+
     /*border: 1px solid #ff00ff;*/
 }
 
@@ -981,13 +983,42 @@
 }
 
 #fbimg1 {background:url(../files/pngs/54_footer_fundraisers.png);}
-#fbimg1:hover {background:url(../files/pngs/54_footer_fundraisers.png);}
 #fbimg2 {background:url(../files/pngs/55_footer_careers.png)}
-#fbimg2:hover {background:url(../files/pngs/55_footer_careers.png)}
 #fbimg3 {background:url(../files/pngs/56_footer_instagram.png)}
-#fbimg3:hover {background:url(../files/pngs/56_footer_instagram.png)}
 #fbimg4 {background:url(../files/pngs/57_footer_email.png)}
-#fbimg4:hover {background:url(../files/pngs/57_footer_email.png)}
+
+#fbimg1:hover {
+    background:
+        linear-gradient(
+          rgba(255,255,255,0.45), 
+          rgba(255,255,255,0.45)
+        ),
+        url(../files/pngs/54_footer_fundraisers.png);
+}
+#fbimg2:hover {
+    background:
+        linear-gradient(
+          rgba(255,255,255,0.45), 
+          rgba(255,255,255,0.45)
+        ),
+        url(../files/pngs/55_footer_careers.png)
+}
+#fbimg3:hover {
+    background:
+        linear-gradient(
+          rgba(255,255,255,0.45), 
+          rgba(255,255,255,0.45)
+        ),
+        url(../files/pngs/56_footer_instagram.png)
+}
+#fbimg4:hover {
+    background:
+        linear-gradient(
+          rgba(255,255,255,0.45), 
+          rgba(255,255,255,0.45)
+        ),
+        url(../files/pngs/57_footer_email.png)
+}
 
 
 #fbimg1,
@@ -1004,6 +1035,10 @@
     z-index: 100;
     background-repeat: no-repeat !important;
     background-size: auto 100% !important;
+    -moz-border-radius: 70px; 
+    -webkit-border-radius: 70px; 
+    border-radius: 70px;
+
 }
 
 .foot-bub-text {
@@ -1112,6 +1147,10 @@
         margin-bottom: 20px;
         height: 0px;
     }
+    #partners-cont {
+        margin-top: -5%;
+    }
+
     .halves {
         float: left;
     }
