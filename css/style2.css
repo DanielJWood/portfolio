@@ -100,7 +100,11 @@
     position: fixed;
     margin-top: 8%;
     margin-bottom: 8%;
-    z-index: 30;
+    z-index: 30;   
+}
+
+#topLogo, #title {
+    max-width: 1300px;
 }
 
 #topLogo img {
@@ -108,6 +112,7 @@
     width: 15%;
     min-width: 100px;
     display: block;
+    /*width: 100%;*/
 }
 
 #title {
@@ -203,14 +208,15 @@
 #bg0 {
     position: fixed;
     margin-top: -50%;
-    width: 100%;
+    width: 110%;
     height: 0;
     background:url(../files/pngs/02_laSkyline.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 149.8%;
+    padding-top: 165.8%;
     float: left;
     display: none;
+    left: -10%;    
 }
 
 #bg2 {
