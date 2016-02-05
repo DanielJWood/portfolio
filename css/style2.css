@@ -469,7 +469,6 @@
 .bubble {
     position: absolute;
     z-index: 100000;
-    margin-top: 0px !important;
 }
 
 .bubble img {
@@ -839,8 +838,7 @@
     margin-top: -12%;
     width: 100%;
     height: 0;
-
-    background: url(../files/pngs/47_mapCalifornia.png),linear-gradient(transparent, white,white);
+    background: url(../files/pngs/caMap-01_1500_cutout.png),linear-gradient(transparent, white,white);
     background-repeat: no-repeat;
     background-size: contain;
     /*background-color: ;*/
@@ -883,7 +881,7 @@
 
 #orange2-bar-container {
     margin-top: -90%;
-    z-index: -10;
+    z-index: 100;
 }
 
 #orange2-box, #orange2-bottom-box {
@@ -1111,6 +1109,15 @@
 .wb2 {
     width: 15% !important;
     display: none;
+}
+
+@media only screen and (max-width: 642px) {
+    .bubble {
+        margin-top: 0px !important;
+    }
+    #flat {
+        margin-top: 0px !important;
+    }
 }
 
 
