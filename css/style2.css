@@ -193,7 +193,7 @@
 }
 
 #bg0-cont{
-    z-index: 0;
+    z-index: -10;
 }
 
 #bg1-cont {
@@ -201,7 +201,7 @@
 }
 
 #bg2-cont {
-    z-index: -1;
+    z-index: -12;
     position: relative;
 }
 
@@ -231,6 +231,7 @@
     left: -20%;
     float: left;
     display: none;
+    margin-top: -15%;
 }
 
 #bg1 {
@@ -353,7 +354,7 @@
     left: -15%;
 }
 #relate0-cont {
-    z-index: -1;
+    z-index: -11;
 }
 
 #relate-cont {
@@ -1009,6 +1010,7 @@
     background-color: #000;
     z-index: 650;  
     position: relative;
+    margin-bottom: 400px;
 }
 
 #footer-text {
@@ -1201,8 +1203,8 @@
     #pbub3,
     #pbub4,
     #pbub5 {
-        width: 90%;
-        padding-top: 90%;
+        width: 65%;
+        padding-top: 65%;
     }
     .partner-bub {
         float: left;        
@@ -1267,6 +1269,10 @@
         padding-bottom: 20px;
         margin-top: -10%;
     }
+    #master_container {
+        width: 90%;
+    }
+
 } /* min-width 1025px, large screens */
 
 
