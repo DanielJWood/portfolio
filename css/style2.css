@@ -64,9 +64,11 @@
 }
 
 .serif {
-    font-family: "Georgia Cava",Georgia,serif !important;
+    /*font-family: serif;*/
+    font-family: 'NotoSerif-Italic',georgia,serif !important;
+    /*font-family: "NotoSerif-Italic",georgia;*/
     text-transform: none !important;
-    font-style: italic !important;
+    /*font-style: italic !important;*/
 }
 
 .row h1 {
@@ -163,6 +165,7 @@
     background-color: transparent;
     max-width: 1300px;
     margin: 0 auto;
+    overflow: hidden;
  }
 
 #bg0-cont,
@@ -192,6 +195,11 @@
     z-index: 1;
 }
 
+#bg2-cont {
+    z-index: -1;
+    position: relative;
+}
+
 #bg0 {
     position: fixed;
     margin-top: -50%;
@@ -201,6 +209,20 @@
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 149.8%;
+    float: left;
+    display: none;
+}
+
+#bg2 {
+    position: fixed;
+    margin-top: 0%;
+    width: 150%;
+    height: 0;
+    background: url(../files/pngs/45_farmBackground_1500.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 80%;
+    left: -20%;
     float: left;
     display: none;
 }
@@ -817,16 +839,30 @@
     margin-top: -12%;
     width: 100%;
     height: 0;
-    background: url(../files/pngs/47_mapCalifornia.png);
+
+    background: url(../files/pngs/47_mapCalifornia.png),linear-gradient(transparent, white,white);
     background-repeat: no-repeat;
     background-size: contain;
+    /*background-color: ;*/
     padding-top: 100%;
     float: left;   
 }
 
+#dips-container {
+    margin-top: -20%; 
+    background-color: #fff;    
+}
+
 #dips {
+    /*margin-top: 20%;*/
+
     text-align: center;
     z-index: 1001;
+    background-color: #fff;    
+}
+
+#dips2 {
+    margin-top: 20%;
 }
 
 #dips-img-cont {
@@ -969,7 +1005,6 @@
     background-color: #000;
     z-index: 650;  
     position: relative;
-    height: 500px;
 }
 
 #footer-text {
@@ -981,7 +1016,20 @@
     float: left;
     height: 100px;
     margin-bottom: 20px;
-    /*border: 1px solid aqua;*/
+}
+
+.foot-square-img {
+    cursor: pointer;
+    /*height: 100%;*/
+    position: relative;
+    z-index: 100;
+    padding-bottom: 10px;
+}
+
+.foot-square-img div {
+    position: absolute;
+    top: 25%;
+    text-align: center;
 }
 
 #fbimg1 {background:url(../files/pngs/54_footer_fundraisers.png);}
@@ -1022,7 +1070,6 @@
         url(../files/pngs/57_footer_email.png)
 }
 
-
 #fbimg1,
 #fbimg2,
 #fbimg3,
@@ -1040,7 +1087,6 @@
     -moz-border-radius: 70px; 
     -webkit-border-radius: 70px; 
     border-radius: 70px;
-
 }
 
 .foot-bub-text {
@@ -1098,7 +1144,7 @@
     }
 
     #vibrant1 {display: none;}
-    #wb1, .line1, .wb2, #bg0, #relate0, #vibrant2 {display:block;}
+    #wb1, .line1, .wb2, #bg0, #relate0, #vibrant2, #bg2 {display:block;}
     #bg1,#relate {
         background: transparent;
     }
@@ -1167,7 +1213,7 @@
 
     #hope-container {
         margin-top: -15%;
-        z-index: -100;
+        z-index: -1;
     }
 
     #hope-text {
@@ -1176,7 +1222,6 @@
         padding: 30px;
         padding-top: 15%;
         text-align: center;
-
     }
 
     #hope {
@@ -1190,6 +1235,13 @@
         float: left; 
         z-index: 500; 
     }    
+
+    #farm {
+        opacity: 0;
+    }
+    #footer {
+        height: 500px;
+    }
 
 } /* min-width 641px, medium screens */
 
