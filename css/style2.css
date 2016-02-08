@@ -1272,6 +1272,9 @@
     #master_container {
         width: 90%;
     }
+    #topLogo, #title {
+        width: 90%;
+    }
 
 } /* min-width 1025px, large screens */
 
