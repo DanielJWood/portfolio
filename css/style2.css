@@ -979,7 +979,6 @@
     background-color: #000;
     z-index: 650;  
     position: relative;
-    margin-bottom: 400px;
 }
 
 #footer-text {
@@ -1240,6 +1239,9 @@
     }
     #menu-button {
         width: 50%;    
+    }
+    #footer {
+        margin-bottom: 400px;
     }
 
 } /* min-width 641px, medium screens */
