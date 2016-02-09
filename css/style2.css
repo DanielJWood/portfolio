@@ -489,6 +489,10 @@
 #bub4 {right: 15%;top: 55%; width: 35%; }
 #bub5 {left: 25%;top: 85%; width: 35%;  }
 
+#menu-button {
+    width: 75%;    
+}
+
 #vibrant2 {
     position: absolute;
     top: -50px;
@@ -556,36 +560,45 @@
 
 #mo-loc-cont {
     position: relative;
-    /*width: 110%;*/
-    /*margin-left: -5%;    */
+    /*width: 110%;
+    margin-left: -5%;*/    
+    margin-top: 70%;    
+    margin-bottom: 90%;
 }
 
 #mo-loc-cont div {
-    border: 1px solid #ff00ff;
-    height: 200px;
+    height: 1px;
 }
 
 .bot-align {
     position: absolute;
     bottom: 0px;
-    right: 0px;
     height: auto !important;
 }
 
 .top-align {
     position: absolute;
     top: 0px;
-    right: 0px;
     height: auto !important;   
 }
 
-#topanga-1, #topanga-2, #topanga-3, #topanga-4,
-#westwood-1, #westwood-2, #westwood-3, #westwood-4 {
+#location-top, #location-bottom {
+    position: relative;
+    height: auto;
+}
+
+#location-bottom {
+    padding-top: 30px;
+}
+
+.topanga, .westwood {
     position: relative;
 }
 
 .loc-half {
     height: auto !important;
+    padding-top: 40px;
+    padding-bottom:10px;
 }
 
 #partners-cont {
@@ -628,7 +641,7 @@
 .partner-bub {
     float: left;
     height: 100px;
-    /*margin-bottom: 20px;*/
+    margin-bottom: 5px;
     cursor: pointer;
     /*border: 1px solid aqua;*/
 }
@@ -699,7 +712,6 @@
     padding: 20px;    
     padding-bottom: 7px;
     float: right;
-    height: 200px;
     position: absolute;
     /*overflow: scroll;*/
     z-index: 10;
@@ -720,6 +732,7 @@
 #partner-info p {
     font-size: 0.9rem;
     line-height: 130%;
+    margin-bottom: 5px;
 }
 
 #where-container {
@@ -1137,6 +1150,14 @@
         margin-top: -20%;
     }
 
+    #mo-loc-cont {
+        position: relative;
+        width: 110%;
+        margin-left: -5%;    
+        margin-top: 36%;    
+        margin-bottom: 43%;
+    }
+
     #partner-info-cont  {
         margin-top: 20%;
     }
@@ -1169,6 +1190,10 @@
     }
     #partners-cont {
         margin-top: -1%;
+    }
+
+    #partner-info {
+        height: 200px;
     }
 
     .halves {
@@ -1212,6 +1237,9 @@
     }
     #footer {
         height: 500px;
+    }
+    #menu-button {
+        width: 50%;    
     }
 
 } /* min-width 641px, medium screens */
