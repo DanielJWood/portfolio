@@ -1006,6 +1006,10 @@
     text-align: center;
 }
 
+#footer-squares {
+    padding-bottom: 50px;
+}
+
 #fbimg1 {background:url(../files/pngs/54_footer_fundraisers.png);}
 #fbimg2 {background:url(../files/pngs/55_footer_careers.png)}
 #fbimg3 {background:url(../files/pngs/56_footer_instagram.png)}
