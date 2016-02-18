@@ -4,14 +4,9 @@
 @font-face{font-family: "NotoSerif-Italic";
 	src:url(fonts/NotoSerif-Italic.ttf)  format('truetype');
 }
-@font-face{font-family: "Georgia Cava";
-	src:url(fonts/Georgia.ttf)  format('truetype');
-}
-
 @font-face{font-family: "Central Union Filled";
 	src:url(fonts/CentralUnionMission-Filled.otf)  format('opentype');
 }
-
 @font-face{font-family: "Central Union Neon";
 	src:url(fonts/CentralUnionMission-Neon.otf)  format('opentype');
 }
