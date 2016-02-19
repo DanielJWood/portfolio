@@ -1,4 +1,4 @@
 name: Daniel Wood's Portfolio Website
 author: Daniel Wood
 author_email: daniel.j.wood11@gmail.com
-exclude: [files/pngs,typography.html]
+exclude: [files/pngs]

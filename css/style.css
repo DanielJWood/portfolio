@@ -1,3 +1,5 @@
+/*Color Pallete*/
+
 #skrollr-body {
     position: relative;
     width: 100%;
@@ -96,6 +98,15 @@
 
 /*content elements*/
 
+#header {
+    background-color: pink;
+
+}
+
+#header h2 {
+    font-family: "Central Union Filled" !important;
+}
+
 #topLogo {
     position: fixed;
     margin-top: 8%;
@@ -115,38 +126,22 @@
     /*width: 100%;*/
 }
 
-#title {
+#title, #title-mobile {
     position: fixed;
     text-align: right;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 5%;
     z-index: 30;
 }
 
-#projects-text {
-    z-index: 1001;
-    text-align: center;
-    background-color: #000;
+#title-mobile {
+    margin-top: 0%;
 }
 
-#projects-text h1 {
-    margin-bottom: 0px;
-}
-
-#flat {
+#title-mobile h1:first-child {
+    display: block;
+    text-align: left;
     position: absolute;
-    height: auto;
-    top: 0px;
-    z-index: 1000;
-    overflow: visible !important;
-    /*width: 1000px;*/
-    text-align: center;
-}
-
-#flat img {
-    z-index: 1000;
-    width: 100%;
-    max-width: 50%;
 }
 
 #meaningful {
@@ -174,17 +169,8 @@
 
 #bg0-cont,
 #dan-fold-mobile-cont,
-#our-food-cont,
-#projects-container, 
-#locations-cont, 
-#partners-cont, 
-#where-container, 
-#orange2-bar-container, 
-#cook-container,
-#farm-container, 
-#map-container, 
-#hope-container,
-#bubbles-cont {
+#projects-container
+{
     position: relative;
     width: 100%;
     height: auto;
@@ -207,7 +193,7 @@
 #bg0 {
     position: fixed;
     /*margin-top: -50%;*/
-    width: 110%;
+    width: 130%;
     height: 0;
     background:url(../files/dan/dan_fold.jpg);
     background-repeat: no-repeat;
@@ -215,43 +201,23 @@
     padding-top: 165.8%;
     float: left;
     display: none;
-    left: -10%;    
-}
-
-#bg2 {
-    position: fixed;
-    margin-top: 0%;
-    width: 150%;
-    height: 0;
-    background: url(../files/pngs/45_farmBackground_1500.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 80%;
-    left: -20%;
-    float: left;
-    display: none;
-    margin-top: -15%;
+    left: -30%;    
 }
 
 #dan-fold-mobile {
-    margin-top: -35%;
-    width: 100%;
+    /*margin-top: -35%;*/
+    width: 110%;
     height: 0;
     background:url(../files/dan/dan_fold.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    padding-top: 149.8%;
+    padding-top: 110%;
     float: left;
 }
 
 #projects-container {    
     z-index: 100;
     margin-top: -55%;
-}
-
-#projects {
-    /*margin: 0 auto;
-    position: relative;*/
 }
 
 #projects-triangle {    
@@ -296,16 +262,18 @@
     border-top: 500px solid #000;
 }
 
+#projects-text {
+    z-index: 1001;
+    text-align: center;
+    background-color: #000;
+}
+
+#projects-text h1 {
+    margin-bottom: 0px;
+}
 
 
-/*#black-bottom-triangle {
-    width: 0; 
-    margin-top:-1000px;
-    border-right: 2000px solid transparent;
-    border-top: 1000px solid #000;   
-}*/
-
-#bg1-cont, #relate-cont {
+#bg1-cont, #dan-laugh-mobile-cont {
     width: 100%;
     height: auto;
     position: relative;
@@ -316,11 +284,11 @@
     z-index: -11;
 }
 
-#relate-cont {
+#dan-laugh-mobile-cont {
     /*display: none;*/
 }
 
-#relate {
+#dan-laugh-mobile {
     margin-top: -39%;
     width: 153%;
     height: 0;
@@ -345,712 +313,9 @@
     left: -10%;    
 }
 
-
-#health-cont {
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 100;
-    margin-top: -54%;
-}
-
-#health-tri-box{
-    width: 100%;
-    height: 0;
-    padding-left:0%;
-    padding-top: 50%;
-    overflow: hidden;
-    position: relative;
-    background-color: transparent;
-    z-index: 530;
-}
-
-#health-triangle-top {
-    width: 0; 
-    margin-top:-1000px;
-    border-right: 2000px solid #fff;
-    border-top: 1000px solid transparent;  
-}
-#health {
-    width: 100%;
-    position: relative;
-    background-color: #fff;     
-    text-align: center;
-    margin:0 auto;
-    z-index: 531;
-    padding-bottom: 1px;
-}
-
-#health h4 {
-    padding-top: 20px;
-}
-
-#our-food h2 {
-    text-align: center;
-}
-
-#our-food-cont {    
-    z-index: 100;
-}
-
-#our-food {
-    width: 100%;
-    position: relative;
-    /*height:300px;*/
-    padding-top: 22%;
-    padding-bottom: 1px;
-    background-color: #fff;   
-    text-align: center;
-    /*width: 50%;  */
-}
-
-#bubbles-cont {
-    width: 100%;
-    background-color: #fff;
-    overflow: visible;
-    z-index: 1000;
-}
-
-#bubbles {
-    /*width: 70%;*/
-    position: relative;
-    /*background-color: #fff;     */
-    /*height: 500px;*/
-    text-align: center;
-    z-index: 531;
-    padding-bottom: 1px;
-    margin:0 auto;
-    padding-top: 80%;
-    overflow: visible;
-}
-
-.bubble {
-    position: absolute;
-    z-index: 100000;
-}
-
-.bubble img {
-    width: 100%;
-    z-index: 4000;
-}
-
-#bub1 {left: 10%;top: 5%; width: 30%; }
-#bub2 {top:0;right: 0%;width: 50%;}
-#bub3 {left: 20%;top: 40%; width: 30%; }
-#bub4 {right: 15%;top: 55%; width: 35%; }
-#bub5 {left: 25%;top: 85%; width: 35%;  }
-
-#menu-button {
-    width: 75%;    
-}
-
-#vibrant2 {
-    position: absolute;
-    top: -50px;
-    left: -150px;
-    /*width: 200%;*/
-    overflow:visible;
-    display: none;
-}
-
-#l2 {
-    margin-top: -40.5%;
-    margin-left: -33.5%
-}
-
-#l3 {
-    margin-top: 10%;
-    margin-left: -89%;
-}
-
-#l4 {
-    display: block;
-    margin-left: -33.5%;
-}
-
-#locations-cont {
-    background-color: #fff;
-}
-
-#locations-line {
-    width: 100%;
-    position: relative;
-    /*height: 430px;*/
-    background-color: #fff;
-    margin-top: -30%;
-    padding-top: 50%;
-}
-
-#locations-box {
-    width: 100%;
-    position: relative;
-    height: 100px;
-    background-color: #fff;   
-    z-index: -10;
-    text-align: center;
-    /*margin-top: 10%;*/
-}
-
-#locations-box h2 {
-/*position: absolute;
-   top: -10px;
-   z-index: */
-}
-
-#l4 {
-    border-top: none !important;
-    height: 20px;
-    background:
-    linear-gradient(
-      rgba(246, 161, 30, 0.3),
-      rgba(246, 161, 30, 0.3)
-    ),url(../files/pngs/18_orangeStripes.png);
-    background-repeat: repeat;
-    top: 50%;
-}
-
-#mo-loc-cont {
-    position: relative;
-    /*width: 110%;
-    margin-left: -5%;*/    
-    margin-top: 70%;    
-    margin-bottom: 90%;
-}
-
-#mo-loc-cont div {
-    height: 1px;
-}
-
-.bot-align {
-    position: absolute;
-    bottom: 0px;
-    height: auto !important;
-}
-
-.top-align {
-    position: absolute;
-    top: 0px;
-    height: auto !important;   
-}
-
-#location-top, #location-bottom {
-    position: relative;
-    height: auto;
-}
-
-#location-bottom {
-    padding-top: 30px;
-}
-
-.topanga, .westwood {
-    position: relative;
-}
-
-.loc-half {
-    height: auto !important;
-    padding-top: 40px;
-    padding-bottom:10px;
-}
-
-#partners-cont {
-    margin-top: 10%;
-}
-
-#partners {
-    width: 100%;
-    height: 0;
-    background:url(../files/pngs/27_partners_cactusBackground_1500.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*padding-top: 170.5%;*/
-    padding-top: 210%;
-    float: left;
-    /*margin-top: -20%;*/
-    z-index: -10;
-}
-
-#partners-text-bubs {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: 0;
-    padding-top: 0%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#partners-bubbles {
-    
-    /*position: relative;*/
-    margin-top: 25px;
-}
-
-.halves {
-
-}
-
-.partner-bub {
-    float: left;
-    height: 100px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    /*border: 1px solid aqua;*/
-}
-
-/*.partner-bub:last-child {
-    margin-bottom: 10px;
-}*/
-
-#pbub1,
-#pbub2,
-#pbub3,
-#pbub4,
-#pbub5 {
-    width: 100px;
-    height: 100%;
-    margin: 0 auto;
-    /*float: left;*/
-    z-index: 100;
-    /*background-color: #ff00ff;*/
-    background: url(../files/pngs/partners_icons-01.png);
-    background-repeat: no-repeat !important;
-    background-size: 505%;
-
-    /*border: 1px solid #ff00ff;*/
-}
-
-#pbub1.active,#pbub1:hover {
-    background-position: 0 0;
-}
-#pbub1 {
-    background-position: 0 101.5%;
-}
-#pbub2.active,#pbub2:hover {
-    background-position: 25% 0;
-}
-#pbub2 {
-    background-position: 25% 101.5%;
-}
-#pbub3.active,#pbub3:hover {
-    background-position: 50% 0;
-}
-#pbub3 {
-    background-position: 50% 101.5%;
-}
-#pbub4.active,#pbub4:hover {
-    background-position: 75% 0;
-}
-#pbub4 {
-    background-position: 75% 101.5%;
-}
-#pbub5.active,#pbub5:hover {
-    background-position: 100% 0;
-}
-#pbub5 {
-    background-position: 100% 101.5%;
-}
-
-
-#partner-info-cont {
-    position: relative;
-    clear: both;
-}
-
-#partner-info {
-    background-color: rgb(50,50,50);
-    background-color: rgba(0,0,0,0.6);
-    text-align: left;
-    padding: 20px;    
-    padding-bottom: 7px;
-    float: right;
-    position: absolute;
-    /*overflow: scroll;*/
-    z-index: 10;
-}
-
-#partner-pic {
-    height: 200px;
-    width: 200px;
-    float: right;
-    position: relative;
-    z-index: 11;
-}
-
-#partner-info h4 {
-    letter-spacing: .3rem;
-}
-
-#partner-info p {
-    font-size: 0.9rem;
-    line-height: 130%;
-    margin-bottom: 5px;
-}
-
-#where-container {
-    margin-top: -40%;
-    z-index: 200;
-}
-
-#where-box, #where-bottom-box {
-    width: 100%;
-    height: 0;
-    padding-left:0%;
-    padding-top: 18%;
-    overflow: hidden;
-    position: relative;
-    background-color: transparent;
-    z-index: 530;
-}
-
-#where-triangle-top {
-    width: 0; 
-    margin-top:-240px;
-    border-right: 2000px solid #000;
-    border-top: 240px solid transparent;  
-}
-
-#where {
-    width: 100%;
-    position: relative;
-    height: 50px;
-    background-color: #000;     
-}
-
-#where-sub {
-    background-color: #000;
-    z-index: 1000;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: -30%;
-}
-
-#wb3 {
-    width: 30%;
-}
-
-
-#where-bottom-box {
-    overflow: visible;
-}
-
-#where-bottom-triangle {
-    width: 0; 
-    margin-top:-240px;
-    border-right: 2000px solid transparent;
-    border-top: 240px solid #000;
-}
-
-#farm-container, #map-container, #hope-container {
-    z-index: 100;    
-}
-
-#farm {
-    margin-top: -14%;
-    width: 100%;
-    height: 0;
-    background: url(../files/pngs/45_farmBackground_1500.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 66.8%;
-    float: left;
-}
-
-#map-container {
-    z-index: 101;
-}
-
-#map {
-    margin-top: -12%;
-    width: 100%;
-    height: 0;
-    background: url(../files/pngs/caMap-01_1500_cutout.png),linear-gradient(transparent, white,white);
-    background-repeat: no-repeat;
-    background-size: contain;
-    /*background-color: ;*/
-    padding-top: 100%;
-    float: left;   
-}
-
-#dips-container {
-    margin-top: -20%; 
-    background-color: #fff;    
-}
-
-#dips {
-    /*margin-top: 20%;*/
-
-    text-align: center;
-    z-index: 1001;
-    background-color: #fff;    
-}
-
-#dips2 {
-    margin-top: 20%;
-}
-
-#dips-img-cont {
-    position: relative;
-    height: 0;
-    padding-top: 100%;
-}
-
-#dips-img-cont img {
-    position: relative;
-    z-index: 1002;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /*max-width: 500px;*/
-    width: 100%;
-    margin-top: -70%;
-}
-
-#orange2-bar-container {
-    margin-top: -90%;
-    z-index: 100;
-}
-
-#orange2-box, #orange2-bottom-box {
-    width: 100%;
-    height: 0;
-    padding-left:0%;
-    padding-top: 30%;
-    overflow: hidden;
-    position: relative;
-    background-color: transparent;
-    z-index: 530;
-}
- 
-#orange2-bottom-box {
-    margin-top: -10%;
-    /*overflow: visible;*/
-    z-index: 532;
-}
-
-#orange2-triangle-top {
-    width: 0; 
-    margin-top:-600px;
-    border-right: 2000px solid #f6a11e;
-    border-top: 600px solid transparent;  
-}
-
-#orange2-bottom-triangle {
-    width: 0; 
-    margin-top:-600px;
-    border-right: 2000px solid #fff;
-    border-top: 600px solid transparent;
-    z-index: 600;
-}
-
-#orange2 {
-    width: 100%;
-    position: relative;
-    padding-top: 20%;
-    background-color: #f6a11e; 
-    margin-top: -20%;
-    z-index: 531;       
-}
-#cook {
-    padding-top: 20%;
-    background-color: #fff; 
-    padding-bottom: 15%;
-    z-index: 531;
-}
-
-#cook-photo img {
-    width: 100%;
-    max-width: 500px;
-}
-
-#cook-container {
-    margin-top: -15%;
-    z-index: 0;
-    /*background-color: #fff;*/
-}
-
-#cook-box {
-    width: 100%;
-    height: 0;
-    padding-left:0%;
-    padding-top: 10%;
-    /*overflow: visible;*/
-    overflow: hidden;
-    position: relative;
-    background-color: transparent;
-    z-index: 530;
-    margin-top: -5%;
-}
-
-#cook-bottom-triangle {
-    width: 0; 
-    margin-top:-100px;
-    border-right: 2000px solid transparent;
-    border-top: 100px solid #fff;
-    z-index: 600;
-}
-
-#hope-container {
-    margin-top: -15%;
-    z-index: -100;
-}
-
-#hope-text {
-    border: 10px solid white;
-    margin-top: -85%;
-    padding: 5px;
-    padding-top: 20%;
-    text-align: center;
-}
-
-#hope {
-    /*margin-top: -12%;*/
-    width: 100%;
-    height: 0;
-    background: url(../files/pngs/Background_table_2.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 78.6%;
-    float: left; 
-    z-index: 500; 
-}
-
-#wb4 {
-    width: 10%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-#footer-image {
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-#footer {
-    background-color: #000;
-    z-index: 650;  
-    position: relative;
-}
-
-#footer-text {
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.foot-bub {
-    float: left;
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.foot-square-img {
-    cursor: pointer;
-    /*height: 100%;*/
-    position: relative;
-    z-index: 100;
-    padding-bottom: 10px;
-}
-
-.foot-square-img div {
-    position: absolute;
-    top: 25%;
-    text-align: center;
-}
-
-#footer-squares {
-    padding-bottom: 50px;
-}
-
-#fbimg1 {background:url(../files/pngs/54_footer_fundraisers.png);}
-#fbimg2 {background:url(../files/pngs/55_footer_careers.png)}
-#fbimg3 {background:url(../files/pngs/56_footer_instagram.png)}
-#fbimg4 {background:url(../files/pngs/57_footer_email.png)}
-
-#fbimg1:hover {
-    background:
-        linear-gradient(
-          rgba(255,255,255,0.45), 
-          rgba(255,255,255,0.45)
-        ),
-        url(../files/pngs/54_footer_fundraisers.png);
-}
-#fbimg2:hover {
-    background:
-        linear-gradient(
-          rgba(255,255,255,0.45), 
-          rgba(255,255,255,0.45)
-        ),
-        url(../files/pngs/55_footer_careers.png)
-}
-#fbimg3:hover {
-    background:
-        linear-gradient(
-          rgba(255,255,255,0.45), 
-          rgba(255,255,255,0.45)
-        ),
-        url(../files/pngs/56_footer_instagram.png)
-}
-#fbimg4:hover {
-    background:
-        linear-gradient(
-          rgba(255,255,255,0.45), 
-          rgba(255,255,255,0.45)
-        ),
-        url(../files/pngs/57_footer_email.png)
-}
-
-#fbimg1,
-#fbimg2,
-#fbimg3,
-#fbimg4
-{
-    /*border: 1px solid #ff00ff;*/
-    width: 100px;
-    cursor: pointer;
-    height: 100%;
-    margin: 0 auto;
-    /*float: left;*/
-    z-index: 100;
-    background-repeat: no-repeat !important;
-    background-size: auto 100% !important;
-    -moz-border-radius: 70px; 
-    -webkit-border-radius: 70px; 
-    border-radius: 70px;
-}
-
-.foot-bub-text {
-    padding-top: 5px;
-    text-align: center;
-}
-
-
-/*bars and stuff*/
-.white-bar {
-    height: 10px;
-    background-color: #fff;
-    margin-bottom: 5%;
-}
-
-#wb1 {
-    width: 30%;
-    display: none;
-}
-
-
-.wb2 {
-    width: 15% !important;
-    display: none;
-}
-
 @media only screen and (max-width: 642px) {
-    .bubble {
-        margin-top: 0px !important;
-    }
-    #flat {
-        margin-top: 0px !important;
-    }
-}
 
+}
 
 @media only screen and (min-width: 40.063em) { 
     .row h1 {
@@ -1081,118 +346,15 @@
         font-size: 1rem; 
     }
 
-    #vibrant1 {display: none;}
-    #wb1, .line1, .wb2, #bg0, #bg1, #vibrant2, #bg2 {display:block;}
-    #dan-fold-mobile,#relate {
+    #bg0, #bg1  {display:block;}
+    #dan-fold-mobile,#dan-laugh-mobile {
         background: transparent;
     }
     #projects {padding-bottom: 20%;}
     #projects-box {padding-top: 30%;}
     #projects-bottom-box {height: 0;padding-top: 0}
-    #flat {
-        padding-left: 5%;    
-        text-align: left;
-        /*position: relative;*/
-        margin-top: -30%;
-    }
-
-    #flat img {
-        max-width: 50%;
-    }
     #meaningful {
         margin-top: -20%;
-    }
-
-    #mo-loc-cont {
-        position: relative;
-        width: 110%;
-        margin-left: -5%;    
-        margin-top: 36%;    
-        margin-bottom: 43%;
-    }
-
-    #partner-info-cont  {
-        margin-top: 20%;
-    }
-
-    #partners {
-        padding-top: 170.5%;
-    }
-
-    #partner-info {
-        padding-right: 20%;
-        right: 100px;  
-        margin-top: 0px !important;      
-    }
-
-    #partners-text-bubs {
-        margin-top: 50%;
-    }
-    #pbub1,
-    #pbub2,
-    #pbub3,
-    #pbub4,
-    #pbub5 {
-        width: 65%;
-        padding-top: 65%;
-    }
-    .partner-bub {
-        float: left;        
-        margin-bottom: 20px;
-        height: 0px;
-    }
-    #partners-cont {
-        margin-top: -1%;
-    }
-
-    #partner-info {
-        height: 200px;
-    }
-
-    .halves {
-        float: left;
-    }
-    #where-sub {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-top: -10%;
-    }
-
-    #hope-container {
-        margin-top: -15%;
-        z-index: -1;
-    }
-
-    #hope-text {
-        border: 20px solid white;
-        margin-top: -75%;
-        padding: 30px;
-        padding-top: 15%;
-        text-align: center;
-    }
-
-    #hope {
-        /*margin-top: -12%;*/
-        width: 100%;
-        height: 0;
-        background: url(../files/pngs/Background_table_2.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-top: 78.6%;
-        float: left; 
-        z-index: 500; 
-    }    
-
-    #farm {
-        opacity: 0;
-    }
-    #footer {
-        height: 500px;
-    }
-    #menu-button {
-        width: 50%;    
     }
     #footer {
         margin-bottom: 400px;
@@ -1201,14 +363,7 @@
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 64.063em) { 
-    #projects-box {padding-top: 9%;}
-    #where-sub {
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-top: -10%;
-    }
+    #projects-box {padding-top: 9%;}    
     #master_container {
         width: 90%;
     }
@@ -1223,15 +378,7 @@
 
 
 @media only screen and (min-width: 500px) { 
-    #partners {
-        padding-top: 180.5%;
-    }
-    #partner-info {
-        margin-top: 20px;
-    }
-    #where-sub {
-        margin-top: -20%;       
-    }
+
 }
 
 
