@@ -1,4 +1,16 @@
 /*Color Pallete*/
+/*
+Black:;
+white
+blue ocean:rgb(146,199,237)
+yellow rgb(254,246,72)
+green rgb(14,220,164)
+red 
+pink
+purple
+land-blue rgb(0,161,231)
+
+*/
 
 #skrollr-body {
     position: relative;
@@ -97,14 +109,36 @@
 }
 
 /*content elements*/
-
 #header {
-    background-color: pink;
-
+    /*background-color: #fff;*/
+    /*background-color: rgb(146,199,237);*/
+    /*background-color: rgba(203,230,251,0.7);*/
+    background-color: rgba(0,0,0,0.6);
+    padding: 5px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
 }
 
 #header h2 {
-    font-family: "Central Union Filled" !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    font-size: 0.2rem;
+    letter-spacing: 0.05rem;
+    /*color: rgb(146,199,237);
+    color: rgb(254,246,72);*/
+}
+
+.head-text {
+    position: relative;
+    float: right;
+    margin-left: 15px;
+}
+
+.head-text:first-child {
+    float: left;
+    margin-left: 5px;
 }
 
 #topLogo {
@@ -114,7 +148,7 @@
     z-index: 30;   
 }
 
-#topLogo, #title {
+#topLogo, #title, #header {
     max-width: 1300px;
 }
 
@@ -169,7 +203,8 @@
 
 #bg0-cont,
 #dan-fold-mobile-cont,
-#projects-container
+#projects-container,
+#header-container
 {
     position: relative;
     width: 100%;
@@ -205,7 +240,7 @@
 }
 
 #dan-fold-mobile {
-    /*margin-top: -35%;*/
+    margin-top: 32px;
     width: 110%;
     height: 0;
     background:url(../files/dan/dan_fold.jpg);
@@ -318,6 +353,19 @@
 }
 
 @media only screen and (min-width: 40.063em) { 
+    #header h2 {
+        font-size: 1rem;
+    }
+
+    .head-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .head-text:first-child {
+        margin-left: 10px;
+    }
+
     .row h1 {
         /*font-size: 40px;    */
         font-size: 4.8rem;
@@ -363,11 +411,15 @@
 } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 64.063em) { 
+    #header h2 {
+        font-size: 2rem;
+    }
+
     #projects-box {padding-top: 9%;}    
     #master_container {
         width: 90%;
     }
-    #topLogo, #title {
+    #topLogo, #title, #header {
         width: 90%;
     }
     .row h1 {
