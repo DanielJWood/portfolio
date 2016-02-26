@@ -16,19 +16,19 @@ $(window).on("load", function() {
 	// console.log("test3")
 });
 
-var song = new Audio('../files/good-foot.mp3');
+// var song = new Audio('../files/good-foot.mp3');
 
-$("#hitme").mouseover(function(){
-	if (i===0) {
-		song.play();
-		i+=1;
-		setInterval(function () {
-	        song.pause();
-	    // },5625);
-	    },5625);
+// $("#hitme").mouseover(function(){
+// 	if (i===0) {
+// 		song.play();
+// 		i+=1;
+// 		setInterval(function () {
+// 	        song.pause();
+// 	    // },5625);
+// 	    },5625);
 
-	}
-})
+// 	}
+// })
 
 
 

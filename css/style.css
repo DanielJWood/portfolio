@@ -17,16 +17,16 @@ land-blue rgb(0,161,231)
 .c2:hover {color: rgb(254,246,72); background-color: rgb(254,246,72);}
 .c3:hover {color: rgb(249,101,91); background-color: rgb(249,101,91);}
 .c4:hover {color: rgb(132,104,214); background-color: rgb(132,104,214);}*/
-#projects-text h1 span {
+#projects-box h1 span {
     /*color: transparent;*/
 }
 
-.c1 {color:#000; text-shadow: -2px 2px 4px rgb(0,161,231);}
-.c2 {color:#000; text-shadow: -2px 2px 4px rgb(254,246,72);}
-.c3 {color:#000; text-shadow: -2px 2px 4px rgb(249,101,91);}
-.c4 {color:#000; text-shadow: -2px 2px 4px rgb(132,104,214);}
+.c1 {text-shadow: -2px 2px 4px rgb(0,161,231);}
+.c2 {text-shadow: -2px 2px 4px rgb(254,246,72);}
+.c3 {text-shadow: -2px 2px 4px rgb(249,101,91);}
+.c4 {text-shadow: -2px 2px 4px rgb(132,104,214);}
 
-#projects-text h1 span:hover {
+#projects-box h1 span:hover {
     color: transparent;
     /*text-shadow: none;*/
 }
@@ -317,7 +317,7 @@ land-blue rgb(0,161,231)
     margin-left:-3000px;
     border-left: 3000px solid transparent;
     border-right: 3000px solid transparent;
-    border-bottom: 500px solid #000;
+    border-bottom: 500px solid rgba(200,200,200,0.8);
 }
 /*Down pointing*/
 .triangle-down, .triangle-down2 {
@@ -349,14 +349,36 @@ land-blue rgb(0,161,231)
     margin-top:-500px;
     border-left: 3000px solid #000;
     border-right: 3000px solid #000;
-    border-top: 500px solid transparent;
+    border-top: 500px solid rgba(200,200,200,0.8);
 }   
+
+#projects-box {
+    z-index: 1001;
+    text-align: center;
+    background-color: #000;
+    /*padding-top: 40%;*/
+}
 
 #projects-text {
     z-index: 1001;
     text-align: center;
-    background-color: #000;
-    padding-top: 40%;
+    background-color: rgba(200,200,200,0.8);
+    /*padding-top: 40%;   */
+}
+
+#projects-text h1 {
+    margin-bottom: 0;
+    line-height: 20%;
+    letter-spacing: 10px;
+    /*color: rgba(200,200,200,0.9);*/
+}
+
+.offset2 {
+    margin-left: -50px;
+}
+
+.offset {
+    margin-left: -25px;
 }
 
 #bg1-cont, #dan-laugh-mobile-cont {
@@ -397,6 +419,11 @@ land-blue rgb(0,161,231)
     float: left;
     display: none;
     left: -10%;    
+}
+
+.thumbnail.bubble {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 642px) {
@@ -450,7 +477,7 @@ land-blue rgb(0,161,231)
         background: transparent;
     }
     #projects {padding-bottom: 20%;}
-    #projects-box {padding-top: 30%;}
+    #projects-below {padding-top: 30%;}
     #projects-bottom-box {height: 0;padding-top: 0}
     #meaningful {
         margin-top: -20%;
@@ -466,7 +493,7 @@ land-blue rgb(0,161,231)
         font-size: 2rem;
     }
 
-    #projects-box {padding-top: 9%;}    
+    #projects-below {padding-top: 9%;}    
     #master_container {
         width: 90%;
     }
