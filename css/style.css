@@ -104,6 +104,14 @@ land-blue rgb(0,161,231)
     /*font-style: italic !important;*/
 }
 
+.filled {
+    font-family: 'Central Union Filled',sans-serif !important;
+}
+
+.arvo {
+    font-family: 'Arvo', serif !important;
+}
+
 .row h1 {
     letter-spacing: .2rem; font-size: 2.5rem;
 }
@@ -167,7 +175,7 @@ land-blue rgb(0,161,231)
     z-index: 30;   
 }
 
-#topLogo, #title, #header {
+#topLogo, #title, #title2, #header {
     max-width: 1300px;
 }
 
@@ -186,6 +194,23 @@ land-blue rgb(0,161,231)
     margin-top: 5%;
     z-index: 30;
 }
+
+#title2 {
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    margin-top: 5%;
+    z-index: 30;   
+}
+
+#title2 a {
+    color: #fff;
+}
+
+#title2 a:hover {
+    text-decoration: none !important;
+    text-shadow: -2px 2px 4px #e700a1;
+=}
 
 #title-mobile {
     margin-top: 0%;
@@ -295,7 +320,7 @@ land-blue rgb(0,161,231)
     border-bottom: 500px solid #000;
 }
 /*Down pointing*/
-.triangle-down {
+.triangle-down, .triangle-down2 {
     width: 100%;
     height: 0;
     padding-left:50%;
@@ -310,25 +335,28 @@ land-blue rgb(0,161,231)
     height: 0;
     margin-left:-3000px;
     margin-top:-500px;
-    
     border-left: 3000px solid transparent;
     border-right: 3000px solid transparent;
     border-top: 500px solid #000;
 }
 
+.triangle-down2:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-3000px;
+    margin-top:-500px;
+    border-left: 3000px solid #000;
+    border-right: 3000px solid #000;
+    border-top: 500px solid transparent;
+}   
+
 #projects-text {
     z-index: 1001;
     text-align: center;
     background-color: #000;
-}
-
-#projects-text h1 {
-    margin-bottom: 0px;
-}
-
-#projects-box {
-    background-color: pink;
-    padding-top: -10%;
+    padding-top: 40%;
 }
 
 #bg1-cont, #dan-laugh-mobile-cont {
@@ -442,7 +470,7 @@ land-blue rgb(0,161,231)
     #master_container {
         width: 90%;
     }
-    #topLogo, #title, #header {
+    #topLogo, #title, #title2, #header {
         width: 90%;
     }
     .row h1 {
