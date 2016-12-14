@@ -23,137 +23,126 @@ layout: default
     </div>
 
     <div class="off-canvas-content" data-off-canvas-content>
-      <!-- Page content -->
-      <div id="skrollr-body">
-        <div id="master_container" class="m_container">
-          <div class="row">    
-            <div id="bg0-cont">
-              <div id="bg0">
-              </div>
-            </div>
-          </div>  
+    	<div id="master_container" class="m_container">
 
-          <div class="row">
-            <div id="bg1-cont">
-              <div id="bg1">
+  		  <div class="row">    
+          <div id="bg0-cont">
+            <div id="bg0">
+            </div>
+          </div>
+        </div>  
+        <div class="row">    
+          <div id="bg1-cont">
+            <div id="bg1">
+            </div>	
+          </div>
+        </div>  
+        <div class="row">
+          <div data-sticky-container>
+            <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+              <div class="title-bar-left">
+                <span class="title-bar-title"><h1 class="white-text mobile-title">Daniel Wood</h1></span>
               </div>
-            </div>
-          </div>  
-
-          <div class="row">
-            <div data-sticky-container>
-              <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
-                <div class="title-bar-left">
-                  <span class="title-bar-title"><h1 class="white-text mobile-title">Daniel Wood</h1></span>
-                </div>
-                <div class="title-bar-right">
-                  <button class="menu-icon" type="button" data-open="offCanvas"></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">    
-            <div id="dan-fold-mobile-cont" class="columns">
-              <div id="dan-fold-mobile" >          
-              </div>              
-            </div>
-          </div>
-
-          <div class="row">
-            <div id="title" class="hide-for-small-only small-12 columns">
-                <h1 class="white-text">Daniel<br>Wood</h1>    
-                <h2 class="white-text arvo">Data Visualizations<br> and Web Development<br> at Energy.gov</h2>
-              </div>  
-          </div>
-
-          <div class="row">
-            <div id="projects-container">
-              <div class="up-headline-triangle"></div>
-              <div id="projects-text" class="large-12 small-12 small-centered">                  
-                <h1 class="white-text">
-                <span class="c1">P</span><span class="c2">r</span><span class="c3">o</span><span class="c4">j</span><span class="c1">e</span><span class="c2">c</span><span class="c3">t</span><span class="c4">s</span>
-              </div>   
-              <div class="down-headline-triangle"></div>
-              <div id="projects-box" class="large-12 small-12 small-centered">
-                <!-- Projects, Writing, Math, Other things -->
-                {% for post in site.posts %}
-                <div class="proj large-4 medium-6 small-12 columns">                  
-                  <div class="thumbnail">
-                    <!-- <a href="{{ post.url }}"> -->
-                      <div class="overlay">
-                        <div class="overlay-inset">
-                          <div class="overlay-inset-top">
-                            <h2 class="arvo">{{ post.title }}</h2>                          
-                          </div>                        
-                          <div class="overlay-inset-bottom">
-                            <h3>Ingredients: Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor</h3>
-                          </div>
-                        </div>                        
-                      </div>
-                      <img src="files/projects/{{ post.img }}">
-                      <!-- <div class="proj-details">
-                        
-                      </div> -->
-                    <!-- </a> -->
-                  </div>                                              
-                  <!-- <div class="thumbnail bubble"></div><div class="thumbnail bubble"></div><div class="thumbnail bubble"></div> -->
-                </div>
-                {% endfor %}
-              </div>             
-              <div class="end-triangle"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div id="resume-container">
-              <div class="up-headline-triangle"></div>
-              <div id="resume-text" class="large-12 small-12 small-centered">                  
-                <h1 class="white-text">
-                <span class="c1">R</span><span class="c2">E</span><span class="c3">S</span><span class="c4">U</span><span class="c1">M</span><span class="c2">E</span>
-              </div>                 
-              <div class="down-headline-triangle"></div>
-              <div id="resume-box" class="large-12 small-12 small-centered text-box">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus at lectus ut hendrerit. Nullam ultricies, neque id fringilla maximus, elit ante rhoncus ante, et posuere quam lectus et elit. Pellentesque semper diam dictum nisl dapibus, quis tempor turpis fringilla. Proin iaculis, turpis sit amet volutpat feugiat, metus diam malesuada magna, et congue elit tellus eu lorem. In suscipit dapibus nibh. Nullam ultrices nisi nulla, fermentum posuere sapien faucibus vel. Integer scelerisque semper turpis, eu imperdiet purus rhoncus et. Vivamus tincidunt, risus ac lobortis finibus, odio erat vehicula leo, vitae fringilla felis tortor facilisis felis. Quisque tincidunt tortor urna, id mollis eros pharetra et. Phasellus ultricies commodo ante vel pellentesque. Mauris eget tristique tellus.
-<br>
-<br>
-                Vestibulum commodo aliquet ultricies. Maecenas nec metus nisi. Quisque accumsan in ante finibus feugiat. Phasellus iaculis eget metus id ullamcorper. Quisque imperdiet erat non magna dignissim rhoncus. Integer fringilla purus tincidunt pulvinar ultrices. Sed vel dignissim massa, ac imperdiet mi. Nullam arcu velit, ullamcorper at nibh sit amet, posuere accumsan sapien. Fusce eros quam, varius ut egestas eget, efficitur molestie mauris. Pellentesque ac nunc lorem. Morbi et ligula a quam lacinia cursus. Pellentesque justo sem, sodales sed leo nec, ullamcorper ullamcorper diam.
-<br>
-<br>
-                In hac habitasse platea dictumst. Curabitur sagittis venenatis odio, sed vestibulum tortor ornare egestas. Nullam rhoncus vulputate odio eget tristique. Quisque in lorem felis. In a purus quam. In sit amet odio luctus, tristique est nec, scelerisque eros. Sed at ante vel massa varius luctus non non elit. Cras vitae malesuada nisl. Sed ac lobortis lacus, non sollicitudin risus. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras tristique posuere tortor vitae viverra. Morbi lacinia libero justo, convallis placerat nulla rutrum in.
-
-              </div>
-              <div class="end-triangle"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div id="about-container">
-              <div class="up-headline-triangle"></div>
-              <div id="about-text" class="large-12 small-12 small-centered">                  
-                <h1 class="white-text">
-                <span class="c1">A</span><span class="c2">B</span><span class="c3">O</span><span class="c4">U</span><span class="c1">T</span>
-              </div>                 
-              <div class="down-headline-triangle"></div>
-              <div id="about-box" class="large-12 small-12 small-centered text-box">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus at lectus ut hendrerit. Nullam ultricies, neque id fringilla maximus, elit ante rhoncus ante, et posuere quam lectus et elit. Pellentesque semper diam dictum nisl dapibus, quis tempor turpis fringilla. Proin iaculis, turpis sit amet volutpat feugiat, metus diam malesuada magna, et congue elit tellus eu lorem. In suscipit dapibus nibh. Nullam ultrices nisi nulla, fermentum posuere sapien faucibus vel. Integer scelerisque semper turpis, eu imperdiet purus rhoncus et. Vivamus tincidunt, risus ac lobortis finibus, odio erat vehicula leo, vitae fringilla felis tortor facilisis felis. Quisque tincidunt tortor urna, id mollis eros pharetra et. Phasellus ultricies commodo ante vel pellentesque. Mauris eget tristique tellus.
-<br>
-<br>
-                Vestibulum commodo aliquet ultricies. Maecenas nec metus nisi. Quisque accumsan in ante finibus feugiat. Phasellus iaculis eget metus id ullamcorper. Quisque imperdiet erat non magna dignissim rhoncus. Integer fringilla purus tincidunt pulvinar ultrices. Sed vel dignissim massa, ac imperdiet mi. Nullam arcu velit, ullamcorper at nibh sit amet, posuere accumsan sapien. Fusce eros quam, varius ut egestas eget, efficitur molestie mauris. Pellentesque ac nunc lorem. Morbi et ligula a quam lacinia cursus. Pellentesque justo sem, sodales sed leo nec, ullamcorper ullamcorper diam.
-              </div>
-              <div class="end-triangle"></div>
-            </div>
-          </div>
-          <div class="row">    
-            <div id="dan-laugh-mobile-cont">
-              <div id="dan-laugh-mobile" >          
+              <div class="title-bar-right">
+                <button class="menu-icon" type="button" data-open="offCanvas"></button>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="row">    
+          <div id="dan-fold-mobile-cont" class="columns">
+            <div id="dan-fold-mobile" >          
+            </div>              
+          </div>
+        </div>
+        <div class="row">
+        	<div id="title-container">
+        		<div class="large-12 hide-for-small-only columns">
+        			<h1 class="white-text">Daniel<br>Wood</h1>    
+            <h2 style="margin-bottom:0px;" class="white-text arvo">Data Visualizations<br> and Web Development<br> at Energy.gov</h2>
+            <ul class="social-media-list">  
+	            <li><a href="mailto:daniel.j.wood11@gmail.com"><i class="icon-mail"></i></a></li>
+	            <li>
+	              <a href="https://github.com/DanielJWood">
+	                <i class="icon-github-circled"></i>
+	              </a>
+	            </li>			            
+	            <li>
+	              <a href="https://twitter.com/DanielPWWood">
+	                <i class="icon-twitter"></i>
+	              </a>
+	            </li>
+	            <li>
+	              <a href="https://www.linkedin.com/in/danieljwood11">
+	                <i class="icon-linkedin"></i>
+	              </a>
+	            </li>
+	        	</ul>
+        		</div>          		
+        	</div>           
+        </div>	
+        <div class="row">
+          <div id="projects-container">
+            <div class="up-headline-triangle"></div>
+            <div id="projects-text" class="large-12 small-12 small-centered">
+            	<h1 class="white-text">
+                <span class="c1">P</span><span class="c2">r</span><span class="c3">o</span><span class="c4">j</span><span class="c1">e</span><span class="c2">c</span><span class="c3">t</span><span class="c4">s</span>
+              </h1>
+            </div>
+            <div class="down-headline-triangle"></div>
+            <div class="columns large-12 double-project-container">
+            	{% include projects.html %}
+            </div>
+            <div class="end-triangle" ></div>              
+          </div>
+        </div>
+				<div class="row">
+          <div id="resume-container">
+            <div class="up-headline-triangle"></div>
+            <div id="resume-text" class="large-12 small-12 small-centered">                  
+              <h1 class="white-text">
+              <span class="c1">R</span><span class="c2">E</span><span class="c3">S</span><span class="c4">U</span><span class="c1">M</span><span class="c2">E</span>
+             	</h1>
+            </div>                 
+            <div class="down-headline-triangle white"></div>
+            <div class="columns large-12 double-white-container">
+            	<div class="row">			            
+		            <div id="resume-box" class="large-8 small-12 small-centered text-box">
+		            	{% capture my-include %}{% include work.md %}{% endcapture %}
+									{{ my-include | markdownify }}
+									{% capture my-include %}{% include skills.md %}{% endcapture %}
+									{{ my-include | markdownify }}
+									{% capture my-include %}{% include education.md %}{% endcapture %}
+									{{ my-include | markdownify }}
+		            </div>
+			        </div>
+			      </div>
+            <div class="end-triangle white"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="about-container">
+            <div class="up-headline-triangle"></div>
+            <div id="about-text" class="large-12 small-12 small-centered">                  
+              <h1 class="white-text">
+              <span class="c1">A</span><span class="c2">B</span><span class="c3">O</span><span class="c4">U</span><span class="c1">T</span>
+            	</h1>
+            </div>                 
+            <div class="down-headline-triangle white"></div>
+            <div id="about-box" class="large-12 small-12 small-centered text-box">                
+            </div>
+            <div class="end-triangle white"></div>
+          </div>
+        </div>
+        <div class="row">    
+          <div id="dan-laugh-mobile-cont">
+            <div id="dan-laugh-mobile" > 
+            <!-- <h2 class="white-text arvo">If you need me,</h2><br> -->
+          <!-- <span id="hitme"><h1><a class="c1" href="mailto:daniel.j.wood11@gmail.com">Hit</a> <a class="c2" href="https://twitter.com/DanielPWWood">Me</a></h1></span>          -->
+            </div>
+          </div>
+        </div>
+    	</div>
     </div>
   </div>
 </div>
-
-              <!-- <div data-60p="opacity:0" data-120p="opacity:1" id="title2" class="hide-for-small-only">
-                <h2 class="white-text arvo">If you need me,</h2><br>
-                <span id="hitme"><h1><a class="c1" href="mailto:daniel.j.wood11@gmail.com">Hit</a> <a class="c2" href="https://twitter.com/DanielPWWood">Me</a></h1></span>
-              </div>   -->

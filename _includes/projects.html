@@ -1,0 +1,23 @@
+<div class="row">
+	<div class="large-8 small-centered">
+		{% for post in site.posts %}
+			<div class="proj large-6 medium-6 small-12 columns">                  
+				<div class="thumbnail">
+        <!-- <a href="{{ post.url }}"> -->
+          <div class="overlay">
+            <div class="overlay-inset">
+              <div class="overlay-inset-top">
+                <h2 class="arvo">{{ post.title }}</h2>                          
+              </div>                        
+              <div class="overlay-inset-bottom">
+                <h3>Ingredients: Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor</h3>
+              </div>
+            </div>                        
+          </div>
+          <img src="files/projects/{{ post.img }}">
+        <!-- </a> -->
+      </div>                                              
+			</div>
+		{% endfor %}
+	</div>
+</div>

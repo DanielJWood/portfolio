@@ -16,6 +16,21 @@ $(window).on("load", function() {
 	// console.log("test3")
 });
 
+$(document).scroll(function() {
+		var width = $(document).width();
+		var now = $(document).scrollTop()
+		if (now <=(5*width / 6)) {
+			$("#bg0").fadeIn(100)
+			// $("#title").fadeIn(100)
+			
+		}
+		else if (now >= (5*width / 6)){
+			$("#bg0").fadeOut(100)
+			// $("#title").fadeOut(100)
+		};
+
+})
+
 // var song = new Audio('../files/good-foot.mp3');
 
 // $("#hitme").mouseover(function(){
