@@ -1,50 +1,147 @@
 ---
 layout: default
 ---
+<div class="off-canvas-wrapper">
+  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+    <div class="off-canvas position-right" id="offCanvas" data-position="right" data-off-canvas>
 
-<div id="skrollr-body">
-  <div id="master_container" class="m_container">
+      <!-- Close button -->
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
 
-        <div class="row">    
-      <div id="bg0-cont">
-        <div id="bg0" data-500="opacity:1" data-900="opacity:0;">
-        </div>
-      </div>
-    </div>  
+      <!-- Menu -->
+      <ul class="vertical menu">
+        <li><a href="#">Foundation</a></li>
+        <li><a href="#">Dot</a></li>
+        <li><a href="#">ZURB</a></li>
+        <li><a href="#">Com</a></li>
+        <li><a href="#">Slash</a></li>
+        <li><a href="#">Sites</a></li>
+      </ul>
 
-    <div class="row">
-      <div id="bg1-cont">
-        <div id="bg1" data-1000="opacity:1" data-1260="opacity:1">
-        </div>
-      </div>
-    </div>	
-
-    <div class="row">    
-      <div id="dan-fold-mobile-cont">
-        <div id="dan-fold-mobile" >          
-        </div>
-        <div data-0p="opacity:1" data-60p="opacity:0" id="title" class="hide-for-small-only">
-            <h1 class="white-text">Daniel<br>Wood</h1>    
-          <h2 class="white-text arvo">Coming Soon</h2>
-        </div>  
-        <div data-60p="opacity:0" data-120p="opacity:1" id="title2" class="hide-for-small-only">
-          <h2 class="white-text arvo">If you need me,</h2><br>
-          <span id="hitme"><h1><a class="c1" href="mailto:daniel.j.wood11@gmail.com">Hit</a> <a class="c2" href="https://twitter.com/DanielPWWood">Me</a></h1></span>
-        </div>  
-
-        <div class="show-for-small-only" id="title-mobile">
-          <h1 class="white-text">Daniel</h1>
-          <h1 class="white-text">Wood</h1>    
-        </div>
-      </div>
     </div>
 
-    <div class="row">
-    	<div id="projects-container">
-    		<!-- <div id="projects-triangle"></div> -->
-        <div class="triangle-down2"></div>
-        <div id="projects-text" class="large-12 small-12 small-centered"></div>             
-        <div class="triangle-down"></div>
+    <div class="off-canvas-content" data-off-canvas-content>
+    	<div id="master_container" class="m_container">
+
+  		  <div class="row">    
+          <div id="bg0-cont">
+            <div id="bg0">
+            </div>
+          </div>
+        </div>  
+        <div class="row">    
+          <div id="bg1-cont">
+            <div id="bg1">
+            </div>	
+          </div>
+        </div>  
+        <div class="row">
+          <div data-sticky-container>
+            <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
+              <div class="title-bar-left">
+                <span class="title-bar-title"><h1 class="white-text mobile-title">Daniel Wood</h1></span>
+              </div>
+              <div class="title-bar-right">
+                <button class="menu-icon" type="button" data-open="offCanvas"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div id="dan-fold-mobile-cont" class="columns">
+            <div id="dan-fold-mobile" >          
+            </div>              
+          </div>
+        </div>
+        <div class="row">
+        	<div id="title-container">
+        		<div class="large-12 hide-for-small-only columns">
+        			<h1 class="white-text">Daniel<br>Wood</h1>    
+            <h2 style="margin-bottom:0px;" class="white-text arvo">Data Visualizations<br> and Web Development<br> at Energy.gov</h2>
+            <ul class="social-media-list">  
+	            <li><a href="mailto:daniel.j.wood11@gmail.com"><i class="icon-mail"></i></a></li>
+	            <li>
+	              <a href="https://github.com/DanielJWood">
+	                <i class="icon-github-circled"></i>
+	              </a>
+	            </li>			            
+	            <li>
+	              <a href="https://twitter.com/DanielPWWood">
+	                <i class="icon-twitter"></i>
+	              </a>
+	            </li>
+	            <li>
+	              <a href="https://www.linkedin.com/in/danieljwood11">
+	                <i class="icon-linkedin"></i>
+	              </a>
+	            </li>
+	        	</ul>
+        		</div>          		
+        	</div>           
+        </div>	
+        <div class="row">
+          <div id="projects-container">
+            <div class="up-headline-triangle"></div>
+            <div id="projects-text" class="large-12 small-12 small-centered">
+            	<h1 class="white-text">
+                <span class="c1">P</span><span class="c2">r</span><span class="c3">o</span><span class="c4">j</span><span class="c1">e</span><span class="c2">c</span><span class="c3">t</span><span class="c4">s</span>
+              </h1>
+            </div>
+            <div class="down-headline-triangle"></div>
+            <div class="columns large-12 double-project-container">
+            	{% include projects.html %}
+            </div>
+            <div class="end-triangle" ></div>              
+          </div>
+        </div>
+				<div class="row">
+          <div id="resume-container">
+            <div class="up-headline-triangle"></div>
+            <div id="resume-text" class="large-12 small-12 small-centered">                  
+              <h1 class="white-text">
+              <span class="c1">R</span><span class="c2">E</span><span class="c3">S</span><span class="c4">U</span><span class="c1">M</span><span class="c2">E</span>
+             	</h1>
+            </div>                 
+            <div class="down-headline-triangle white"></div>
+            <div class="columns large-12 double-white-container">
+            	<div class="row">			            
+		            <div id="resume-box" class="large-8 small-12 small-centered text-box">
+		            	{% capture my-include %}{% include work.md %}{% endcapture %}
+									{{ my-include | markdownify }}
+									{% capture my-include %}{% include skills.md %}{% endcapture %}
+									{{ my-include | markdownify }}
+									{% capture my-include %}{% include education.md %}{% endcapture %}
+									{{ my-include | markdownify }}
+		            </div>
+			        </div>
+			      </div>
+            <div class="end-triangle white"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div id="about-container">
+            <div class="up-headline-triangle"></div>
+            <div id="about-text" class="large-12 small-12 small-centered">                  
+              <h1 class="white-text">
+              <span class="c1">A</span><span class="c2">B</span><span class="c3">O</span><span class="c4">U</span><span class="c1">T</span>
+            	</h1>
+            </div>                 
+            <div class="down-headline-triangle white"></div>
+            <div id="about-box" class="large-12 small-12 small-centered text-box">                
+            </div>
+            <div class="end-triangle white"></div>
+          </div>
+        </div>
+        <div class="row">    
+          <div id="dan-laugh-mobile-cont">
+            <div id="dan-laugh-mobile" > 
+            <!-- <h2 class="white-text arvo">If you need me,</h2><br> -->
+          <!-- <span id="hitme"><h1><a class="c1" href="mailto:daniel.j.wood11@gmail.com">Hit</a> <a class="c2" href="https://twitter.com/DanielPWWood">Me</a></h1></span>          -->
+            </div>
+          </div>
+        </div>
     	</div>
     </div>
   </div>

@@ -1,3 +1,25 @@
+.social-media-list {
+    list-style: none;
+    margin: 0;
+}
+
+.social-media-list li {
+    display: inline-block;    
+}
+
+.social-media-list li a { 
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.title-bar-left .social-media-list li a { 
+    font-size: 20px;   
+}
+
+.social-media-list li a:hover { 
+    color: #000;
+}
+
 /*Color Pallete*/
 /*
 Black:;
@@ -17,29 +39,31 @@ land-blue rgb(0,161,231)
 .c2:hover {color: rgb(254,246,72); background-color: rgb(254,246,72);}
 .c3:hover {color: rgb(249,101,91); background-color: rgb(249,101,91);}
 .c4:hover {color: rgb(132,104,214); background-color: rgb(132,104,214);}*/
-#projects-text h1 span {
+#projects-box h1 span {
     /*color: transparent;*/
 }
 
-.c1 {color:#000; text-shadow: -2px 2px 4px rgb(0,161,231);}
-.c2 {color:#000; text-shadow: -2px 2px 4px rgb(254,246,72);}
-.c3 {color:#000; text-shadow: -2px 2px 4px rgb(249,101,91);}
-.c4 {color:#000; text-shadow: -2px 2px 4px rgb(132,104,214);}
+.c1 {text-shadow: -2px 2px 4px rgb(0,161,231);}
+.c2 {text-shadow: -2px 2px 4px rgb(254,246,72);}
+.c3 {text-shadow: -2px 2px 4px rgb(249,101,91);}
+.c4 {text-shadow: -2px 2px 4px rgb(132,104,214);}
 
-#projects-text h1 span:hover {
+#projects-box h1 span:hover {
     color: transparent;
     /*text-shadow: none;*/
 }
 
-#skrollr-body {
+.off-canvas-content {
+    background-color: transparent;
+}
+
+/*#skrollr-body {
     position: relative;
     width: 100%;
-    /*height: 5100px;*/
     height: auto;
     overflow-x:hidden;
     overflow-y: hidden; 
-    /*edit to get rid of double bar*/
-}
+}*/
 
 
 .skrollable {
@@ -168,31 +192,32 @@ land-blue rgb(0,161,231)
     margin-left: 5px;
 }
 
-#topLogo {
-    position: fixed;
-    margin-top: 8%;
-    margin-bottom: 8%;
-    z-index: 30;   
-}
-
-#topLogo, #title, #title2, #header {
+#topLogo, #title2, #header {
     max-width: 1300px;
 }
 
-#topLogo img {
-    margin: 0 auto !important;
-    width: 15%;
-    min-width: 100px;
-    display: block;
-    /*width: 100%;*/
+.title-bar {
+    z-index: 1102 !important;
+} 
+
+.title-bar.is-at-top {
+    height: 40px !important;
 }
 
-#title, #title-mobile {
+.title-bar-title h1 {
+    margin-bottom: 0px;
+    font-size: 20px !important;
+    letter-spacing: 1px !important;
+}
+
+
+#title {
     position: fixed;
     text-align: right;
-    width: 100%;
+    /*max-width: 100%;*/
     margin-top: 5%;
     z-index: 30;
+    top: 0px;
 }
 
 #title2 {
@@ -210,44 +235,30 @@ land-blue rgb(0,161,231)
 #title2 a:hover {
     text-decoration: none !important;
     text-shadow: -2px 2px 4px #e700a1;
-=}
-
-#title-mobile {
-    margin-top: 0%;
-}
-
-#title-mobile h1:first-child {
-    display: block;
-    text-align: left;
-    position: absolute;
-}
-
-#meaningful {
-    color: #fff;
-    background-color: #000 !important;
-    text-align: center;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-top: -28%;
 }
 
 /*background*/
+
+#master_container .row {
+    max-width: none;
+}
 
 #master_container {
     font-family: 'Central Union Filled',sans-serif;
     position: relative;
     width: 100%;
     background-color: transparent;
-    max-width: 1300px;
+    /*max-width: 1300px;*/
     margin: 0 auto;
     overflow: hidden;
  }
 
 #bg0-cont,
 #dan-fold-mobile-cont,
+#title-container,
 #projects-container,
+#resume-container,
+#about-container,
 #header-container
 {
     position: relative;
@@ -274,7 +285,9 @@ land-blue rgb(0,161,231)
     /*margin-top: -50%;*/
     width: 130%;
     height: 0;
+    /*background:url(../files/pattern1.png);*/
     background:url(../files/dan/dan_fold.jpg);
+    /*background: url(/files/IMG_1710.JPG);*/
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 165.8%;
@@ -285,21 +298,36 @@ land-blue rgb(0,161,231)
 
 #dan-fold-mobile {
     /*margin-top: 12px;*/
+    margin-left: -3%;
     width: 110%;
     height: 0;
     background:url(../files/dan/dan_fold.jpg);
+    /*background: url(/files/IMG_1710.JPG);*/
     background-repeat: no-repeat;
     background-size: contain;
     padding-top: 110%;
     float: left;
 }
 
-#projects-container {    
-    z-index: 100;
-    margin-top: -55%;
+#title-container {
+    margin-top: -105%;
+    text-align: right;
 }
 
-#projects-triangle {    
+#projects-container {    
+    z-index: 100;
+    margin-top: -59%;
+}
+
+.double-project-container {
+    background-color: #000;
+}
+
+.double-white-container {
+    background-color: #fff;
+}
+
+.up-headline-triangle, .end-triangle {    
     width: 100%;
     height: 0;
     padding-left: 50%;
@@ -309,18 +337,82 @@ land-blue rgb(0,161,231)
     margin: 0 auto;
 }
 
-#projects-triangle:after {
+.up-headline-triangle:after, .end-triangle:after {
     content: "";
     display: block;
     width: 0;
     height: 0;
     margin-left:-3000px;
+ }
+
+.up-headline-triangle:after {
     border-left: 3000px solid transparent;
     border-right: 3000px solid transparent;
-    border-bottom: 500px solid #000;
+    border-bottom: 500px solid rgba(0,0,0,0.50);
 }
+
+.end-triangle:after {
+    border-left: 3000px solid black;
+    border-right: 3000px solid black;
+    border-bottom: 500px solid transparent;
+}
+
+.end-triangle.white:after {
+    border-left: 3000px solid white;
+    border-right: 3000px solid white;
+}
+
+.thumbnail {
+    position: relative;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    padding-top: 58%;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.7);
+    transition: all 0.8s ease;
+}
+
+.overlay:hover {
+    transition: all 0.8s ease;
+    opacity: 1;
+}
+
+.overlay-inset {
+    margin-top: -58%;
+    text-align: center !important;
+}
+
+.overlay-inset h2 {
+    color: black;
+}
+
+.overlay-inset h3 {
+    font-family: 'Arvo', serif;
+    text-align: left;
+    text-transform: none !important;
+    font-size: 1rem;
+    letter-spacing: 0px;  
+}
+
+.overlay-inset-top {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay-inset-bottom {
+    bottom: 0px;
+    position: absolute;
+    padding-left: 10px;
+}
+
 /*Down pointing*/
-.triangle-down, .triangle-down2 {
+.down-headline-triangle {
     width: 100%;
     height: 0;
     padding-left:50%;
@@ -328,19 +420,8 @@ land-blue rgb(0,161,231)
     overflow: hidden;
     margin: 0 auto;
 }
-.triangle-down:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left:-3000px;
-    margin-top:-500px;
-    border-left: 3000px solid transparent;
-    border-right: 3000px solid transparent;
-    border-top: 500px solid #000;
-}
 
-.triangle-down2:after {
+.down-headline-triangle:after {
     content: "";
     display: block;
     width: 0;
@@ -349,14 +430,68 @@ land-blue rgb(0,161,231)
     margin-top:-500px;
     border-left: 3000px solid #000;
     border-right: 3000px solid #000;
-    border-top: 500px solid transparent;
+    border-top: 500px solid rgba(0,0,0,0.50);
 }   
 
-#projects-text {
+.down-headline-triangle.white:after {
+    border-left: 3000px solid #fff;
+    border-right: 3000px solid #fff;
+}
+
+
+.text-box {
+    font-family: 'Arvo', serif;
+    padding: 10px;
+}
+
+.text-box h2, .text-box h3, .text-box h6, .text-box li, .text-box p {
+    /*color: #aaa !important;*/
+}
+
+.text-box h6, .text-box h3 {
+    font-family: 'Arvo', serif;
+    letter-spacing: 2px !important;
+    text-transform: none;
+}
+
+.text-box p {
+    font-family: 'Arvo', serif;
+    text-transform: none;
+}
+
+#projects-box {
+    text-align: center;
+}
+
+#about-box, #resume-box, #projects-box {
+    z-index: 1001;   
+    background-color: #fff;    
+}
+
+#about-text, #resume-text, #projects-text {
     z-index: 1001;
     text-align: center;
+    background-color: rgba(0,0,0,0.50);
+    /*padding-top: 40%;   */
+}
+
+#about-text h1, #resume-text h1, #projects-text h1 {
+    margin-bottom: 0;
+    line-height: 20%;
+    letter-spacing: 10px;
+    /*color: rgba(200,200,200,0.9);*/
+}
+
+.proj {
     background-color: #000;
-    padding-top: 40%;
+}
+
+.offset2 {
+    margin-left: -50px;
+}
+
+.offset {
+    margin-left: -25px;
 }
 
 #bg1-cont, #dan-laugh-mobile-cont {
@@ -364,7 +499,7 @@ land-blue rgb(0,161,231)
     height: auto;
     position: relative;
     z-index: 1;
-    left: -15%;
+    left: -12%;
 }
 #bg1-cont {
     z-index: -11;
@@ -375,28 +510,32 @@ land-blue rgb(0,161,231)
 }
 
 #dan-laugh-mobile {
-    margin-top: -39%;
-    width: 153%;
-    height: 0;
+    margin-top: -10%;
+    width: 115%;
+    /*height: 0;*/
     background: url(../files/dan/dan_laugh.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     /*padding-top: 220.3%;*/
-    padding-top: 125%;
+    padding-top: 75%;
 }
 
 #bg1 {
     position: fixed;
     /*margin-top: -50%;*/
-    width: 110%;
+    width: 150%;
     height: 0;
-    background:url(../files/dan/dan_laugh.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-top: 165.8%;
-    float: left;
-    display: none;
-    left: -10%;    
+    /*background:url(../files/dan/dan_laugh.jpg);*/
+    background:url(../files/pattern7.png);
+    background-repeat: repeat;
+    background-size: 300px 260px;
+    padding-top: 165.8%;    
+    display: none;    
+}
+
+.thumbnail.bubble {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 642px) {
@@ -429,10 +568,20 @@ land-blue rgb(0,161,231)
         letter-spacing: .4rem;
     }
 
+    .overlay-inset h2 {
+        font-size: 1.5rem;
+        letter-spacing: .3rem;   
+    }
+
     .row h3 {
         /*font-size: 26px;*/
         font-size: 1.5rem;
         letter-spacing: .4rem;
+    }
+
+    .overlay-inset h3 {
+        font-size: 1rem;
+        letter-spacing: 0px;        
     }
 
     .row h4 {
@@ -446,11 +595,11 @@ land-blue rgb(0,161,231)
     }
 
     #bg0, #bg1  {display:block;}
-    #dan-fold-mobile,#dan-laugh-mobile {
+    #dan-fold-mobile {
         background: transparent;
     }
     #projects {padding-bottom: 20%;}
-    #projects-box {padding-top: 30%;}
+    #projects-below {padding-top: 30%;}
     #projects-bottom-box {height: 0;padding-top: 0}
     #meaningful {
         margin-top: -20%;
@@ -466,15 +615,23 @@ land-blue rgb(0,161,231)
         font-size: 2rem;
     }
 
-    #projects-box {padding-top: 9%;}    
+    #projects-below {padding-top: 9%;}    
     #master_container {
-        width: 90%;
+        width: 100%;
     }
-    #topLogo, #title, #title2, #header {
-        width: 90%;
+    #topLogo, #title2, #header {
+        max-width: 90%;
     }
     .row h1 {
         font-size: 8.8rem;
+    }
+    .overlay-inset h2 {
+        font-size: 1.7rem !important;
+        /*letter-spacing: 1px !important;        */
+    }
+    .overlay-inset h3 {
+        font-size: 1.2rem !important;
+        letter-spacing: 1px !important;        
     }
 
 } /* min-width 1025px, large screens */
