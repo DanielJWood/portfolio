@@ -1,0 +1,1 @@
+I was born a poor black child
