@@ -1,23 +1,39 @@
 <div class="row">
 	<div class="large-8 small-centered">
+    <div class="proj-subhead large-12">
+      <h2>Charts and Maps</h2>
+    </div>
 		{% for post in site.posts %}
-			<div class="proj large-6 medium-6 small-12 columns">                  
-				<div class="thumbnail">
-        <!-- <a href="{{ post.url }}"> -->
-          <div class="overlay">
-            <div class="overlay-inset">
-              <div class="overlay-inset-top">
-                <h2 class="arvo">{{ post.title }}</h2>                          
-              </div>                        
-              <div class="overlay-inset-bottom">
-                <h3>Ingredients: Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor</h3>
-              </div>
-            </div>                        
-          </div>
-          <img src="files/projects/{{ post.img }}">
-        <!-- </a> -->
-      </div>                                              
-			</div>
+      {% assign this-post = post %}      
+      {% if post.type == "chart" %}
+        {% include subproject.html param=this-post variable-param=page.variable %}
+      {% endif %}
 		{% endfor %}
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 small-centered">
+    <div class="proj-subhead large-12">
+      <h2>Front End Development</h2>
+    </div>
+    {% for post in site.posts %}
+      {% assign this-post = post %}      
+      {% if post.type == "dev" %}
+        {% include subproject.html param=this-post variable-param=page.variable %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 small-centered">    
+    <div class="proj-subhead large-12">
+      <h2>Odds and Ends</h2>
+    </div>
+    {% for post in site.posts %}
+      {% assign this-post = post %}      
+      {% if post.type == "odds" %}
+        {% include subproject.html param=this-post variable-param=page.variable %}
+      {% endif %}
+    {% endfor %}
 	</div>
 </div>

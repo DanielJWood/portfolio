@@ -129,7 +129,14 @@ layout: default
             	</h1>
             </div>                 
             <div class="down-headline-triangle white"></div>
-            <div id="about-box" class="large-12 small-12 small-centered text-box">                
+            <!-- <div id="about-box" class="large-12 small-12 small-centered text-box">  -->
+            <div class="columns large-12 double-white-container">
+              <div class="row">                 
+                <div id="about-box" class="large-8 small-12 small-centered text-box">
+                  {% capture my-include %}{% include about.md %}{% endcapture %}
+                  {{ my-include | markdownify }}
+                </div>
+              </div>
             </div>
             <div class="end-triangle white"></div>
           </div>

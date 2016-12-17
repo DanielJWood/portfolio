@@ -463,6 +463,16 @@ land-blue rgb(0,161,231)
     text-align: center;
 }
 
+.proj-subhead {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.proj-subhead h2 {
+    color: #fff;
+
+}
+
 #about-box, #resume-box, #projects-box {
     z-index: 1001;   
     background-color: #fff;    
