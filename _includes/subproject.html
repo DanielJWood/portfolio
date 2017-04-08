@@ -1,17 +1,17 @@
 <div class="proj large-6 medium-6 small-12 columns">                  
 	<div class="thumbnail">
-  <!-- <a href="{{ post.url }}"> -->
+  <a target="_blank" href="{{ include.param.link }}">
     <div class="overlay">
       <div class="overlay-inset">
         <div class="overlay-inset-top">
           <h2 class="arvo">{{ include.param.title }}</h2>                          
         </div>                        
         <div class="overlay-inset-bottom">
-          <h3>Ingredients: Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor Lorem sum Situs Dolor</h3>
+          <h3>{{include.param.description}}</h3>
         </div>
       </div>                        
     </div>
     <img src="files/projects/{{ include.param.img }}">
-  <!-- </a> -->
+  </a>
   </div>                                              
 </div>

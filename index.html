@@ -3,27 +3,11 @@ layout: default
 ---
 <div class="off-canvas-wrapper">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-    <div class="off-canvas position-right" id="offCanvas" data-position="right" data-off-canvas>
-
-      <!-- Close button -->
-      <button class="close-button" aria-label="Close menu" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-      </button>
-
-      <!-- Menu -->
-      <ul class="vertical menu">
-        <li><a href="#">Foundation</a></li>
-        <li><a href="#">Dot</a></li>
-        <li><a href="#">ZURB</a></li>
-        <li><a href="#">Com</a></li>
-        <li><a href="#">Slash</a></li>
-        <li><a href="#">Sites</a></li>
-      </ul>
-
-    </div>
+    {% include off_canvas.html %}
 
     <div class="off-canvas-content" data-off-canvas-content>
     	<div id="master_container" class="m_container">
+        <div id="home">
 
   		  <div class="row">    
           <div id="bg0-cont">
@@ -37,18 +21,7 @@ layout: default
             </div>	
           </div>
         </div>  
-        <div class="row">
-          <div data-sticky-container>
-            <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
-              <div class="title-bar-left">
-                <span class="title-bar-title"><h1 class="white-text mobile-title">Daniel Wood</h1></span>
-              </div>
-              <div class="title-bar-right">
-                <button class="menu-icon" type="button" data-open="offCanvas"></button>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% include top_line.html %}
         <div class="row">    
           <div id="dan-fold-mobile-cont" class="columns">
             <div id="dan-fold-mobile" >          
@@ -83,62 +56,68 @@ layout: default
         </div>	
         <div class="row">
           <div id="projects-container">
-            <div class="up-headline-triangle"></div>
-            <div id="projects-text" class="large-12 small-12 small-centered">
-            	<h1 class="white-text">
-                <span class="c1">P</span><span class="c2">r</span><span class="c3">o</span><span class="c4">j</span><span class="c1">e</span><span class="c2">c</span><span class="c3">t</span><span class="c4">s</span>
-              </h1>
+            <div id="projects">
+              <div class="up-headline-triangle"></div>
+              <div id="projects-text" class="large-12 small-12 small-centered">
+              	<h1 class="white-text">
+                  <span class="c1">P</span><span class="c2">r</span><span class="c3">o</span><span class="c4">j</span><span class="c1">e</span><span class="c2">c</span><span class="c3">t</span><span class="c4">s</span>
+                </h1>
+              </div>
+              <div class="down-headline-triangle"></div>
+              <div class="columns large-12 double-project-container">
+              	{% include projects.html %}
+              </div>
+              <div class="end-triangle" ></div>              
             </div>
-            <div class="down-headline-triangle"></div>
-            <div class="columns large-12 double-project-container">
-            	{% include projects.html %}
-            </div>
-            <div class="end-triangle" ></div>              
           </div>
         </div>
 				<div class="row">
-          <div id="resume-container">
-            <div class="up-headline-triangle"></div>
-            <div id="resume-text" class="large-12 small-12 small-centered">                  
-              <h1 class="white-text">
-              <span class="c1">R</span><span class="c2">E</span><span class="c3">S</span><span class="c4">U</span><span class="c1">M</span><span class="c2">E</span>
-             	</h1>
-            </div>                 
-            <div class="down-headline-triangle white"></div>
-            <div class="columns large-12 double-white-container">
-            	<div class="row">			            
-		            <div id="resume-box" class="large-8 small-12 small-centered text-box">
-		            	{% capture my-include %}{% include work.md %}{% endcapture %}
-									{{ my-include | markdownify }}
-									{% capture my-include %}{% include skills.md %}{% endcapture %}
-									{{ my-include | markdownify }}
-									{% capture my-include %}{% include education.md %}{% endcapture %}
-									{{ my-include | markdownify }}
-		            </div>
-			        </div>
-			      </div>
-            <div class="end-triangle white"></div>
+          <div id="resume-container" data-magellan-target="resume-container">
+            <div id="resume">
+              <div class="up-headline-triangle"></div>
+              <div id="resume-text" class="large-12 small-12 small-centered">                  
+                <h1 class="white-text">
+                <span class="c1">R</span><span class="c2">E</span><span class="c3">S</span><span class="c4">U</span><span class="c1">M</span><span class="c2">E</span>
+               	</h1>
+              </div>                 
+              <div class="down-headline-triangle white"></div>
+              <div class="columns large-12 double-white-container">
+              	<div class="row">			            
+  		            <div id="resume-box" class="large-8 small-12 small-centered text-box">
+  		            	{% capture my-include %}{% include work.md %}{% endcapture %}
+  									{{ my-include | markdownify }}
+  									{% capture my-include %}{% include skills.md %}{% endcapture %}
+  									{{ my-include | markdownify }}
+  									{% capture my-include %}{% include education.md %}{% endcapture %}
+  									{{ my-include | markdownify }}
+  		            </div>
+  			        </div>
+  			      </div>
+              <div class="end-triangle white"></div>
+            </div>
           </div>
         </div>
         <div class="row">
           <div id="about-container">
-            <div class="up-headline-triangle"></div>
-            <div id="about-text" class="large-12 small-12 small-centered">                  
-              <h1 class="white-text">
-              <span class="c1">A</span><span class="c2">B</span><span class="c3">O</span><span class="c4">U</span><span class="c1">T</span>
-            	</h1>
-            </div>                 
-            <div class="down-headline-triangle white"></div>
-            <!-- <div id="about-box" class="large-12 small-12 small-centered text-box">  -->
-            <div class="columns large-12 double-white-container">
-              <div class="row">                 
-                <div id="about-box" class="large-8 small-12 small-centered text-box">
-                  {% capture my-include %}{% include about.md %}{% endcapture %}
-                  {{ my-include | markdownify }}
+            <div id="about">
+              <div class="up-headline-triangle"></div>
+              <div id="about-text" class="large-12 small-12 small-centered">                  
+                <h1 class="white-text">
+                <span class="c1">A</span><span class="c2">B</span><span class="c3">O</span><span class="c4">U</span><span class="c1">T</span>
+              	</h1>
+              </div>                 
+              <div class="down-headline-triangle white"></div>
+              <!-- <div id="about-box" class="large-12 small-12 small-centered text-box">  -->
+              <div class="columns large-12 double-white-container">
+                <div class="row">                 
+                  <div id="about-box" class="large-8 small-12 small-centered text-box">
+                    {% capture my-include %}{% include about.md %}{% endcapture %}
+                    {{ my-include | markdownify }}
+                  </div>
                 </div>
               </div>
+              <div class="end-triangle white"></div>
             </div>
-            <div class="end-triangle white"></div>
           </div>
         </div>
         <div class="row">    
@@ -150,6 +129,7 @@ layout: default
           </div>
         </div>
     	</div>
+      </div>
     </div>
   </div>
 </div>

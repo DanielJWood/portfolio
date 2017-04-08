@@ -5,7 +5,7 @@
     </div>
 		{% for post in site.posts %}
       {% assign this-post = post %}      
-      {% if post.type != "art" %}
+      {% if post.type == "art" %}
         {% include subproject.html param=this-post variable-param=page.variable %}
       {% endif %}
 		{% endfor %}
