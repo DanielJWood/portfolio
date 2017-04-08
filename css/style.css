@@ -1,3 +1,15 @@
+.off-canvas {
+    background-color: rgba(255,255,255,0);
+}
+
+.off-canvas .menu>li>a, .off-canvas .close-button {
+    color: #fff !important;
+}
+
+.off-canvas .menu>li>a {
+    font-size: 200%;
+}
+
 .social-media-list {
     list-style: none;
     margin: 0;
@@ -314,6 +326,11 @@ land-blue rgb(0,161,231)
     text-align: right;
 }
 
+.secondary #projects-container {    
+    margin-top: -85%;
+
+}
+
 #projects-container {    
     z-index: 100;
     margin-top: -59%;
@@ -371,7 +388,7 @@ land-blue rgb(0,161,231)
 .overlay {
     position: absolute;
     width: 100%;
-    padding-top: 58%;
+    padding-top: 55%;
     opacity: 0;
     background-color: rgba(255,255,255,0.7);
     transition: all 0.8s ease;
@@ -383,7 +400,7 @@ land-blue rgb(0,161,231)
 }
 
 .overlay-inset {
-    margin-top: -58%;
+    margin-top: -57%;
     text-align: center !important;
 }
 
@@ -419,6 +436,10 @@ land-blue rgb(0,161,231)
     padding-top: 10%;
     overflow: hidden;
     margin: 0 auto;
+}
+
+.secondary .down-headline-triangle:after {
+    border-top: 500px solid rgba(0,0,0,0);
 }
 
 .down-headline-triangle:after {
