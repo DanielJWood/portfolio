@@ -629,7 +629,7 @@ land-blue rgb(0,161,231)
     #dan-fold-mobile {
         background: transparent;
     }
-    #projects {padding-bottom: 20%;}
+    /*#projects {padding-bottom: 20%;}*/
     #projects-below {padding-top: 30%;}
     #projects-bottom-box {height: 0;padding-top: 0}
     #meaningful {
