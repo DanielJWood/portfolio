@@ -1,8 +1,14 @@
 ## Professional Experience
 
-### Data Visualization Specialist, Energy.gov
+### Data Visualization Specialist, The Urban Institute
 
-###### Washington, DC | 2013 – present
+###### Washington, DC | 2017 – present
+
+Just getting started!
+
+### Data Visualization Developer, Energy.gov
+
+###### Washington, DC | 2013 – 2017
 
 * Design and develop visualizations, and story-telling features using a full suite of web development tools including D3.js, highcharts.js, mapbox.js, and more (see below). 
 * Write popular articles and blogs to supplement data visualizations.
