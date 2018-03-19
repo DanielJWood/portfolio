@@ -4,7 +4,16 @@
 
 ###### Washington, DC | 2017 – present
 
-Just getting started!
+* Build data visualizations, maps and web pages, for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
+
+### Freelance Web Developer
+
+###### Washington, DC | 2015 – present
+
+Available for your custom data visualization and mapping needs for interactive, static, and print products. 
+
+
+<a href="mailto:daniel.j.wood11@gmail.com">Drop me a line</a> if you're interested. 
 
 ### Data Visualization Developer, Energy.gov
 
