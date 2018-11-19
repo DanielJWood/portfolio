@@ -6,12 +6,18 @@
 
 * Build data visualizations, maps and web pages, for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
 
+### Instructor, Data Analysis Bootcamp, George Washington University
+
+###### Washington, DC | 2018 – present
+
+* Leading an intensive half year course on data science, data analytics, and data visualization. 
+* Teach and mentor class of 20 students seeking to build a professional quality portfolio.
+
 ### Freelance Web Developer
 
-###### Washington, DC | 2015 – present
+###### Washington, DC | Intermittently 
 
 Available for your custom data visualization and mapping needs for interactive, static, and print products. 
-
 
 <a href="mailto:daniel.j.wood11@gmail.com">Drop me a line</a> if you're interested. 
 
