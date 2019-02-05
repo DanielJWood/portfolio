@@ -5,6 +5,8 @@
 ###### Washington, DC | 2017 – present
 
 * Build data visualizations, maps and web pages, for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
+* Worked closely with team of creative professionals to produce high quality, data-rich stories utilizing The Urban Institutes research. 
+* Utilized a wide variety of front-end tools including D3.js, Mapbox GL js, jQuery, and React to produce stunning visualizations, dashboards, and user interfaces. 
 
 ### Instructor, Data Analysis Bootcamp, George Washington University
 
@@ -13,7 +15,7 @@
 * Leading an intensive half year course on data science, data analytics, and data visualization. 
 * Teach and mentor class of 20 students seeking to build a professional quality portfolio.
 
-### Freelance Web Developer
+### Freelance Web Developer and Data Vizualization Consultant
 
 ###### Washington, DC | Intermittently 
 

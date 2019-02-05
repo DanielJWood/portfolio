@@ -2,5 +2,5 @@
 
 ### Boston University | Boston, MA 
 
-B.A., magna cum laude, Environmental Policy and Analysis, May 2011  
+B.A., _magna cum laude_, Environmental Policy and Analysis, May 2011  
 
