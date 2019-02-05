@@ -5,8 +5,11 @@
 ###### Washington, DC | 2017 – present
 
 * Build data visualizations, maps and web pages, for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
-* Worked closely with team of creative professionals to produce high quality, data-rich stories utilizing The Urban Institutes research. 
-* Utilized a wide variety of front-end tools including D3.js, Mapbox GL js, jQuery, and React to produce stunning visualizations, dashboards, and user interfaces. 
+* Work closely with team of creative professionals to produce high quality, data-rich stories utilizing The Urban Institutes research. 
+* Utilize a wide variety of front-end tools including D3.js, Mapbox GL js, jQuery,  and React to produce stunning visualizations, dashboards, and user interfaces.
+* Guide projects from idea inception, through UI/UX design and build, and on to deployment and promotion. 
+* Respond to quick-turn deadlines to react to new cycle needs by creating static charts and maps for our blog. 
+* Improve development stack and team workflow by introducing more modular and time-saving technologies and standards. 
 
 ### Instructor, Data Analysis Bootcamp, George Washington University
 
@@ -14,6 +17,7 @@
 
 * Leading an intensive half year course on data science, data analytics, and data visualization. 
 * Teach and mentor class of 20 students seeking to build a professional quality portfolio.
+* Coursework includes a deep dive into Python, Pandas, Matplotlib, SQL, Javascript, D3.js, machine learning, and an introduction into R, Hadoop, Spark, and other topics.
 
 ### Freelance Web Developer and Data Vizualization Consultant
 
@@ -35,7 +39,7 @@ Available for your custom data visualization and mapping needs for interactive, 
   * Create standardized methods, templates, and tools for rapid prototyping of data visualizations, version controlled through github.
   * Provide technical expertise in ongoing redesign and redevelopment of Energy.gov.
 * Create and integrate tools like quizzes and timelines for rapid content production accessible to non-technical colleagues. 
-* Create live data feeds from large datasets using python on an AWS server.
+* Create live data feeds from large datasets using Python on an AWS server.
 * Produce segments for Energy.gov Podcast, Direct Current.
 * Energy.gov data visualizations and maps stats:
   * Maps and interactives get about 2x engagement on twitter than our average tweet.
