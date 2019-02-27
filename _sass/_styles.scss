@@ -1,6 +1,9 @@
+
+// overall styles
 html {
   scroll-behavior: smooth;
 }
+
 
 .off-canvas {
     background-color: rgba(255,255,255,0);
@@ -17,196 +20,70 @@ html {
 .social-media-list {
     list-style: none;
     margin: 0;
-}
 
-.social-media-list li {
-    display: inline-block;    
-}
+    li {
+	    display: inline-block;    
 
-.social-media-list li a { 
-    color: #fff;
-    font-size: 1.8rem;
+	    a { 
+		    color: #fff;
+		    font-size: 1.8rem;
+
+		    &:hover { 
+			    color: #000;
+			}
+		}
+	}
 }
 
 .title-bar-left .social-media-list li a { 
     font-size: 20px;   
 }
 
-.social-media-list li a:hover { 
-    color: #000;
-}
-
-/*Color Pallete*/
-/*
-Black:;
-white
-blue ocean:rgb(146,199,237)
-yellow rgb(254,246,72)
-green rgb(14,220,164)
-red 
-pink
-purple
-land-blue rgb(0,161,231)
-
-*/
-
-
-/*.c1:hover {color: rgb(0,161,231); background-color: rgb(0,161,231);}
-.c2:hover {color: rgb(254,246,72); background-color: rgb(254,246,72);}
-.c3:hover {color: rgb(249,101,91); background-color: rgb(249,101,91);}
-.c4:hover {color: rgb(132,104,214); background-color: rgb(132,104,214);}*/
 #projects-box h1 span {
     /*color: transparent;*/
+    &:hover {
+    	color: transparent;	
+    }
 }
 
-.c1 {text-shadow: -2px 2px 4px rgb(0,161,231);}
-.c2 {text-shadow: -2px 2px 4px rgb(254,246,72);}
-.c3 {text-shadow: -2px 2px 4px rgb(249,101,91);}
-.c4 {text-shadow: -2px 2px 4px rgb(132,104,214);}
-
-#projects-box h1 span:hover {
-    color: transparent;
-    /*text-shadow: none;*/
-}
 
 .off-canvas-content {
     background-color: transparent;
 }
 
-/*#skrollr-body {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow-x:hidden;
-    overflow-y: hidden; 
-}*/
-
-
-.skrollable {
-    /*
-     * First-level skrollables are positioned relative to window
-     */
-    position:fixed;
-
-    /*
-     * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
-     */
-    z-index:100;
-}
-
-.skrollr-mobile .skrollable {
-    /*
-        May cause issues on Android default browser (see #331 on GitHub).
-    */
-    position:absolute;
-}
-
-.skrollable .skrollable {
-    /*
-     * Second-level skrollables are positioned relative their parent skrollable
-     */
-    position:absolute;
-}
-
-.skrollable .skrollable .skrollable {
-    /*
-     * Third-level (and below) skrollables are positioned static
-     */
-    position:static;
-}
-
-/*TYPOGRAPHY*/
-.row .white-text    {
-    color: #fff !important;
-}
-
-/*Typography*/
-.row h1, .row h2, .row h3, .row h4, .row h5, p {
-    color:#000;
-    text-transform: uppercase;
-    line-height: normal;
-    font-family: 'Central Union Neon',sans-serif;
-}
-
-.bold {
-    font-weight: 700;
-}
-
-.light {
-    font-weight: 300;
-}
-
-.serif {
-    /*font-family: serif;*/
-    font-family: 'NotoSerif-Italic',georgia,serif !important;
-    /*font-family: "NotoSerif-Italic",georgia;*/
-    text-transform: none !important;
-    /*font-style: italic !important;*/
-}
-
-.filled {
-    font-family: 'Central Union Filled',sans-serif !important;
-}
-
-.arvo {
-    font-family: 'Arvo', serif !important;
-}
-
-.row h1 {
-    letter-spacing: .2rem; font-size: 2.5rem;
-}
-
-.row h2 {
-    letter-spacing: .2rem;
-}
-
-.row h3 {
-    letter-spacing: .2rem;
-}
-
-.row h4 {
-}
-
-.row h5 {
-}
-
-.row h4.serif {
-    letter-spacing: .1rem;
-    line-height: 110%;
-}
 
 /*content elements*/
-#header {
-    /*background-color: #fff;*/
-    /*background-color: rgb(146,199,237);*/
-    /*background-color: rgba(203,230,251,0.7);*/
+#header {    
     background-color: rgba(0,0,0,0.6);
     padding: 5px;
     width: 100%;
     z-index: 100;
     position: fixed;
+
+    h2 {
+	    margin: 0;
+	    padding: 0;
+	    font-family: 'Arvo', serif;
+	    font-size: 0.2rem;
+	    letter-spacing: 0.05rem;
+	    /*color: rgb(146,199,237);
+	    color: rgb(254,246,72);*/
+	}
 }
 
-#header h2 {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arvo', serif;
-    font-size: 0.2rem;
-    letter-spacing: 0.05rem;
-    /*color: rgb(146,199,237);
-    color: rgb(254,246,72);*/
-}
+
 
 .head-text {
     position: relative;
     float: right;
     margin-left: 15px;
+
+    &:first-child {
+	    float: left;
+	    margin-left: 5px;
+	}
 }
 
-.head-text:first-child {
-    float: left;
-    margin-left: 5px;
-}
 
 #topLogo, #title2, #header {
     max-width: 1300px;
@@ -242,23 +119,18 @@ land-blue rgb(0,161,231)
     width: 100%;
     margin-top: 5%;
     z-index: 30;   
-}
 
-#title2 a {
-    color: #fff;
-}
+    a {
+	    color: #fff;
 
-#title2 a:hover {
-    text-decoration: none !important;
-    text-shadow: -2px 2px 4px #e700a1;
+	    &:hover {
+		    text-decoration: none !important;
+		    text-shadow: -2px 2px 4px #e700a1;
+		}
+	}
 }
 
 /*background*/
-
-#master_container .row {
-    max-width: none;
-}
-
 #master_container {
     font-family: 'Central Union Filled',sans-serif;
     position: relative;
@@ -267,6 +139,10 @@ land-blue rgb(0,161,231)
     /*max-width: 1300px;*/
     margin: 0 auto;
     overflow: hidden;
+
+    .row {
+	    max-width: none;
+	}
  }
 
 #bg0-cont,
@@ -401,28 +277,28 @@ a img {
     opacity: 0;
     background-color: rgba(255,255,255,0.7);
     transition: all 0.8s ease;
-}
 
-.overlay:hover {
-    transition: all 0.8s ease;
-    opacity: 1;
+    &:hover {
+	    transition: all 0.8s ease;
+	    opacity: 1;
+	}
 }
 
 .overlay-inset {
     margin-top: -57%;
     text-align: center !important;
-}
 
-.overlay-inset h2 {
-    color: black;
-}
+    h2 {
+	    color: black;
+	}
 
-.overlay-inset h3 {
-    font-family: 'Arvo', serif;
-    text-align: left;
-    text-transform: none !important;
-    font-size: 1rem;
-    letter-spacing: 0px;  
+	h3 {
+	    font-family: 'Arvo', serif;
+	    text-align: left;
+	    text-transform: none !important;
+	    font-size: 1rem;
+	    letter-spacing: 0px;  
+	}
 }
 
 .overlay-inset-top {
@@ -472,21 +348,17 @@ a img {
 .text-box {
     font-family: 'Arvo', serif;
     padding: 10px;
-}
 
-.text-box h2, .text-box h3, .text-box h6, .text-box li, .text-box p {
-    /*color: #aaa !important;*/
-}
+    h6, h3 {
+	    font-family: 'Arvo', serif;
+	    letter-spacing: 2px !important;
+	    text-transform: none;
+	}
 
-.text-box h6, .text-box h3 {
-    font-family: 'Arvo', serif;
-    letter-spacing: 2px !important;
-    text-transform: none;
-}
-
-.text-box p {
-    font-family: 'Arvo', serif;
-    text-transform: none;
+	p {
+	    font-family: 'Arvo', serif;
+	    text-transform: none;
+	}
 }
 
 #projects-box {
@@ -496,11 +368,10 @@ a img {
 .proj-subhead {
     text-align: center;
     padding-top: 20px;
-}
 
-.proj-subhead h2 {
-    color: #fff;
-
+    h2 {
+	    color: #fff;
+	}
 }
 
 #about-box, #resume-box, #projects-box {
@@ -513,13 +384,12 @@ a img {
     text-align: center;
     background-color: rgba(0,0,0,0.50);
     /*padding-top: 40%;   */
-}
 
-#about-text h1, #resume-text h1, #projects-text h1 {
-    margin-bottom: 0;
-    line-height: 20%;
-    letter-spacing: 10px;
-    /*color: rgba(200,200,200,0.9);*/
+    h1 {
+    	    margin-bottom: 0;
+	    line-height: 20%;
+	    letter-spacing: 10px;
+    }
 }
 
 .proj {
@@ -578,10 +448,6 @@ a img {
     margin-left: 10px;
 }
 
-@media only screen and (max-width: 642px) {
-
-}
-
 @media only screen and (min-width: 40.063em) { 
     #header h2 {
         font-size: 1rem;
@@ -596,43 +462,47 @@ a img {
         margin-left: 10px;
     }
 
-    .row h1 {
-        /*font-size: 40px;    */
-        font-size: 4.8rem;
-        letter-spacing: .4rem;
-    }
+    .row {
+    	h1 {
+	        /*font-size: 40px;    */
+	        font-size: 4.8rem;
+	        letter-spacing: .4rem;
+	    }
 
-    .row h2 {
-        /*font-size: 32px;*/
-        font-size: 1.2rem;
-        letter-spacing: .3rem;
-    }
+	    h2 {
+	        /*font-size: 32px;*/
+	        font-size: 1.2rem;
+	        letter-spacing: .3rem;
+	    }
 
-    .overlay-inset h2 {
-        font-size: 1.5rem;
-        letter-spacing: .3rem;   
-    }
+	    h3 {
+	        /*font-size: 26px;*/
+	        font-size: 1.5rem;
+	        letter-spacing: .4rem;
+	    }
 
-    .row h3 {
-        /*font-size: 26px;*/
-        font-size: 1.5rem;
-        letter-spacing: .4rem;
-    }
+	    h4 {
+	        /*font-size: 20px;*/
+	        font-size: 1.2rem;
+	    }
 
-    .overlay-inset h3 {
-        font-size: 1rem;
-        letter-spacing: 0px;        
-    }
+	    h5 {
+	        /*font-size: 16px;*/
+	        font-size: 1rem; 
+	    }
+    } 
 
-    .row h4 {
-        /*font-size: 20px;*/
-        font-size: 1.2rem;
-    }
+    .overlay-inset {
+    	h2 {
+	        font-size: 1.5rem;
+	        letter-spacing: .3rem;   
+	    }
 
-    .row h5 {
-        /*font-size: 16px;*/
-        font-size: 1rem; 
-    }
+	    h3 {
+	        font-size: 1rem;
+	        letter-spacing: 0px;        
+	    }
+    } 
 
     #bg0, #bg1  {display:block;}
     #dan-fold-mobile {
@@ -662,36 +532,25 @@ a img {
     #topLogo, #title2, #header {
         max-width: 90%;
     }
-    .row h1 {
-        font-size: 8.8rem;
-    }
-    
-    .row h2 {
-        font-size: 2rem;
+    .row {
+    	h1 {
+	        font-size: 8.8rem;
+	    }
+	    h2 {
+	        font-size: 2rem;
+	    }
     }
 
-    .overlay-inset h2 {
-        font-size: 1.7rem !important;
-        /*letter-spacing: 1px !important;        */
-    }
-    .overlay-inset h3 {
-        font-size: 1.2rem !important;
-        letter-spacing: 1px !important;        
-    }
+    .overlay-inset {
+    	h2 {
+        	font-size: 1.7rem !important;
+        	/*letter-spacing: 1px !important;        */
+    	}
+    	h3 {
+	        font-size: 1.2rem !important;
+	        letter-spacing: 1px !important;        
+	    }
+    } 
 
 } /* min-width 1025px, large screens */
 
-
-@media only screen and (min-width: 500px) { 
-
-}
-
-
-@media only screen and (max-width: 320px) { 
-    .row h1 {
-        /*font-size: 28px*/
-    }
-    .row h2 {
-        /*font-size: 26px;*/
-    }
-}

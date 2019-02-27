@@ -1,5 +1,3 @@
-
 .DS_store
 _site/
-files/designs
-files/cavagrillLA_MARKUP.pdf
+.sass-cache

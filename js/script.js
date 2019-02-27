@@ -31,34 +31,23 @@ $(document).scroll(function() {
 
 })
 
-// var song = new Audio('../files/good-foot.mp3');
-
-// $("#hitme").mouseover(function(){
-// 	if (i===0) {
-// 		song.play();
-// 		i+=1;
-// 		setInterval(function () {
-// 	        song.pause();
-// 	    // },5625);
-// 	    },5625);
-
-// 	}
-// })
-    var hashTagActive = "";
-    $(".scroll").on("click touchstart" , function (event) {
-        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
-            event.preventDefault();
-            //calculate destination place
-            var dest = 0;
-            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-                dest = $(document).height() - $(window).height();
-            } else {
-                dest = $(this.hash).offset().top;
-            }
-            //go to destination
-            $('html,body').animate({
-                scrollTop: dest
-            }, 2000, 'swing');
-            hashTagActive = this.hash;
+var hashTagActive = "";
+$(".scroll").on("click touchstart" , function (event) {
+    if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+        event.preventDefault();
+        //calculate destination place
+        var dest = 0;
+        if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+            dest = $(document).height() - $(window).height();
+        } else {
+            dest = $(this.hash).offset().top;
         }
-    });
+        //go to destination
+        $('html,body').animate({
+            scrollTop: dest
+        }, 2000, 'swing');
+        hashTagActive = this.hash;
+    }
+});
+
+

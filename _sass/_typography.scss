@@ -1,0 +1,83 @@
+
+// import fonts
+// @font-face{font-family: "NotoSerif-BoldItalic";
+// 	src:url(fonts/NotoSerif-BoldItalic.ttf)  format('truetype');
+// }
+// @font-face{font-family: "NotoSerif-Italic";
+// 	src:url(fonts/NotoSerif-Italic.ttf)  format('truetype');
+// }
+
+@font-face{font-family: "Central Union Filled";
+	src:url(fonts/CentralUnionMission-Filled.otf)  format('opentype');
+}
+@font-face{font-family: "Central Union Neon";
+	src:url(fonts/CentralUnionMission-Neon.otf)  format('opentype');
+}
+
+
+/* Text styles */
+.c1 {text-shadow: -2px 2px 4px rgb(0,161,231);}
+.c2 {text-shadow: -2px 2px 4px rgb(254,246,72);}
+.c3 {text-shadow: -2px 2px 4px rgb(249,101,91);}
+.c4 {text-shadow: -2px 2px 4px rgb(132,104,214);}
+
+
+/*TYPOGRAPHY*/
+.row .white-text    {
+    color: #fff !important;
+}
+
+/*Typography*/
+.row h1, .row h2, .row h3, .row h4, .row h5, p {
+    color:#000;
+    text-transform: uppercase;
+    line-height: normal;
+    font-family: 'Central Union Neon',sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.serif {
+    /*font-family: serif;*/
+    font-family: 'NotoSerif-Italic',georgia,serif !important;
+    /*font-family: "NotoSerif-Italic",georgia;*/
+    text-transform: none !important;
+    /*font-style: italic !important;*/
+}
+
+.filled {
+    font-family: 'Central Union Filled',sans-serif !important;
+}
+
+.arvo {
+    font-family: 'Arvo', serif !important;
+}
+
+.row h1 {
+    letter-spacing: .2rem; font-size: 2.5rem;
+}
+
+.row h2 {
+    letter-spacing: .2rem;
+}
+
+.row h3 {
+    letter-spacing: .2rem;
+}
+
+.row h4 {
+}
+
+.row h5 {
+}
+
+.row h4.serif {
+    letter-spacing: .1rem;
+    line-height: 110%;
+}

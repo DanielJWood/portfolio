@@ -2,3 +2,6 @@ name: Daniel Wood's Portfolio Website
 author: Daniel Wood
 author_email: daniel.j.wood11@gmail.com
 exclude: [files/pngs]
+sass:
+    style: compressed
+    sass_dir: _sass
