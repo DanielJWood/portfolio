@@ -1,17 +1,22 @@
 <div class="proj large-12 medium-12 small-12 columns">                  
-	<div class="thumbnail">
-  <a target="_blank" href="{{ include.param.link }}">
-    <div class="overlay">
-      <div class="overlay-inset">
-        <div class="overlay-inset-top">
-          <h2 class="arvo">{{ include.param.title }}</h2>                          
-        </div>                        
-        <div class="overlay-inset-bottom">
-          <h3>{{include.param.description}}</h3>
-        </div>
-      </div>                        
+  <div class="small-title small-12 small-centered show-for-small-only">
+    <h2 class="arvo">{{ include.param.title }}</h2>
+  </div>
+  <div class="thumbnail large-6 medium-6 small-12 columns">
+    <a target="_blank" href="{{ include.param.link }}">     
+      <img src="files/projects/{{ include.param.img }}">
+    </a>
+  </div>
+  <div class="test large-6 medium-6 small-12 columns">
+    <div class="overlay-inset">
+      <div class="overlay-inset-top">
+        <h2 class="arvo hide-for-small-only">{{ include.param.title }}</h2>
+      </div>
+      <div class="overlay-inset-bottom">
+        <h3>{{include.param.description}}</h3>
+      </div>
     </div>
-    <img src="files/projects/{{ include.param.img }}">
-  </a>
-  </div>                                              
+  </div>
+  <div class="breaker small-3 small-centered show-for-small-only"></div>
 </div>
+
