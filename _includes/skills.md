@@ -1,5 +1,3 @@
 ## Skills
 
-HTML, javascript (D3.js, jQuery, Highcharts.js, Mapbox/Leaflet.js, React), CSS, QGis, Adobe Creative Suite, git version control, python, pandas, R, SQL, MongoDB, Hadoop, Machine Learning tools, Inkscape, podcasting 
-
-<!-- Salseforce -->
+HTML, javascript (D3.js, jQuery, Mapbox/Leaflet.js, React), CSS (and Sass), QGis, Bash, Adobe Creative Suite, git version control, python, pandas, R, SQL, MongoDB, Hadoop, machine learning tools, podcasting 

@@ -13,10 +13,10 @@
 
 ### Instructor, Data Analysis Bootcamp, George Washington University
 
-###### Washington, DC | 2018 – present
+###### Washington, DC | 2018 – 2019
 
 * Leading an intensive half year course on data science, data analytics, and data visualization. 
-* Teach and mentor class of 20 students seeking to build a professional quality portfolio.
+* Teach and mentor class of 30 students seeking to build a professional quality portfolio.
 * Coursework includes a deep dive into Python, Pandas, Matplotlib, SQL, Javascript, D3.js, machine learning, and an introduction into R, Hadoop, Spark, and other topics.
 
 ### Freelance Web Developer and Data Vizualization Consultant
