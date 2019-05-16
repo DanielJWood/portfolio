@@ -4,12 +4,14 @@
 
 ###### Washington, DC | 2017 – present
 
-* Build data visualizations, maps and web pages, for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
-* Work closely with team of creative professionals to produce high quality, data-rich stories utilizing The Urban Institutes research. 
+* Build data visualizations, maps and web pages for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
+* Work closely with team of creative professionals to produce high quality, data-rich stories utilizing The Urban Institute's research. 
+* Build and maintain The Urban Institute's open source graphics rig, [Baines](https://github.com/UrbanInstitute/baines) using gulp.js, babel, and other modern front end technologies (_currently in beta_)
 * Utilize a wide variety of front-end tools including D3.js, Mapbox GL js, jQuery,  and React to produce stunning visualizations, dashboards, and user interfaces.
 * Guide projects from idea inception, through UI/UX design and build, and on to deployment and promotion. 
 * Respond to quick-turn deadlines to react to new cycle needs by creating static charts and maps for our blog. 
 * Improve development stack and team workflow by introducing more modular and time-saving technologies and standards. 
+
 
 ### Instructor, Data Analysis Bootcamp, George Washington University
 
