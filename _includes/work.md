@@ -6,7 +6,8 @@
 
 * Build data visualizations, maps and web pages for features, data-portals and blogs on Urban.org and the Urban Wire blog. 
 * Work closely with team of creative professionals to produce high quality, data-rich stories utilizing The Urban Institute's research. 
-* Build and maintain The Urban Institute's open source graphics rig, [Baines](https://github.com/UrbanInstitute/baines) using gulp.js, babel, and other modern front end technologies (_currently in beta_)
+* Build and maintain The Urban Institute's open source graphics rig using gulp.js, babel, and other modern front end technologies.
+<!-- * Build and maintain The Urban Institute's open source graphics rig, [Baines](https://github.com/UrbanInstitute/baines) using gulp.js, babel, and other modern front end technologies (_currently in beta_) -->
 * Utilize a wide variety of front-end tools including D3.js, Mapbox GL js, jQuery,  and React to produce stunning visualizations, dashboards, and user interfaces.
 * Guide projects from idea inception, through UI/UX design and build, and on to deployment and promotion. 
 * Respond to quick-turn deadlines to react to new cycle needs by creating static charts and maps for our blog. 
@@ -21,13 +22,13 @@
 * Teach and mentor class of 30 students seeking to build a professional quality portfolio.
 * Coursework includes a deep dive into Python, Pandas, Matplotlib, SQL, Javascript, D3.js, machine learning, and an introduction into R, Hadoop, Spark, and other topics.
 
-### Freelance Web Developer and Data Vizualization Consultant
+<!-- ### Freelance Web Developer and Data Vizualization Consultant
 
 ###### Washington, DC | Intermittently 
 
 Available for your custom data visualization and mapping needs for interactive, static, and print products. 
 
-<a href="mailto:daniel.j.wood11@gmail.com">Drop me a line</a> if you're interested. 
+<a href="mailto:daniel.j.wood11@gmail.com">Drop me a line</a> if you're interested.  -->
 
 ### Data Visualization Developer, Energy.gov
 

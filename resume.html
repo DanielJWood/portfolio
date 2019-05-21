@@ -1,0 +1,86 @@
+---
+layout: default
+---
+<style type="text/css">
+.print {
+	width: 220mm;
+	background: #fff;
+	max-width: 220mm;
+	margin: 10px;
+}
+
+.print h1 {
+	font-size: 24pt;
+}
+
+.print h2 {
+	font-size: 15pt;
+	letter-spacing: 1pt;
+
+}
+
+.print h3 {
+	font-size: 14pt;
+	letter-spacing: 0.6pt !important;
+	margin-bottom: 0px;
+}
+
+.print h6 {
+	font-size: 11pt;
+	letter-spacing: 0.4pt !important;
+	margin-bottom: 3px;
+}	
+
+.print ul {
+	line-height: 16pt !important;
+}
+
+.print li, p {
+	font-size: 11pt;
+}
+
+.header {
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.icons {
+	
+}
+
+.icons h6 {
+	text-align: center;
+	margin-left: 10px;
+}
+
+
+</style>
+
+
+<div class="row print">
+    <div class="text-box">
+    	<div class="header">
+    		<h1>&nbsp;Daniel Wood</h1>
+	    	<div class="icons">
+	    		<h6>
+	    			<i class="icon-phone"></i>215-221-2873
+	    			<i class="icon-mail-1"></i>daniel.j.wood11@gmail.com
+	    		</h6>
+				<h6>
+					<i class="icon-github-circled"></i>@danieljwood
+					<i class="icon-twitter"></i>@danielpwwood
+					<i class="icon-linkedin"></i>@danieljwood11
+				</h6>	
+				<div class="clearer"></div>
+	    	</div>
+    	</div>
+		{% capture my-include %}{% include work.md %}{% endcapture %}
+	  	{{ my-include | markdownify }}
+	  	{% capture my-include %}{% include skills.md %}{% endcapture %}
+		{{ my-include | markdownify }}
+		{% capture my-include %}{% include education.md %}{% endcapture %}
+		{{ my-include | markdownify }}
+	</div>
+</div>
