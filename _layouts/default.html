@@ -24,7 +24,7 @@
 <!-- CSS including fonts, etc -->
   <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>  
   
-  <link rel="stylesheet" type="text/css" href="css/fontello-d192354e/css/fontello.css">
+  <link rel="stylesheet" type="text/css" href="css/fontello-b2720821/css/fontello.css">
 <!-- End Foundation -->
 
   <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
@@ -57,7 +57,16 @@
     }(jQuery));  
     </script>
   <!-- Scripts (get to work) like script.js -->
-  <script type="text/javascript" src="js/script.js"></script>
+
+
+  {% if page.type == "inner" %}
+    <script type="text/javascript">
+        window.onload = function () { window.print(); }
+    </script>
+  {% else %}
+    <script type="text/javascript" src="js/script.js"></script>
+  {% endif %}
+
 
   <!-- // <script type="text/javascript" src="js/skrollr.min.js"></script> -->
   <!--<script type="text/javascript">

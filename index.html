@@ -1,5 +1,6 @@
 ---
 layout: default
+type: home
 ---
 <div class="off-canvas-wrapper">
   <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
@@ -84,6 +85,9 @@ layout: default
               <div class="columns large-12 double-white-container">
               	<div class="row">			            
   		            <div id="resume-box" class="large-8 medium-10 small-12 small-centered text-box">
+                    <div class="print-button">
+                      <a href="/resume"><i class="icon-print"></i></a>
+                    </div>
   		            	{% capture my-include %}{% include work.md %}{% endcapture %}
   									{{ my-include | markdownify }}
   									{% capture my-include %}{% include skills.md %}{% endcapture %}

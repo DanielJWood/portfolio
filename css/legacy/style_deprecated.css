@@ -1,0 +1,697 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.off-canvas {
+    background-color: rgba(255,255,255,0);
+}
+
+.off-canvas .menu>li>a, .off-canvas .close-button {
+    color: #fff !important;
+}
+
+.off-canvas .menu>li>a {
+    font-size: 200%;
+}
+
+.social-media-list {
+    list-style: none;
+    margin: 0;
+}
+
+.social-media-list li {
+    display: inline-block;    
+}
+
+.social-media-list li a { 
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.title-bar-left .social-media-list li a { 
+    font-size: 20px;   
+}
+
+.social-media-list li a:hover { 
+    color: #000;
+}
+
+/*Color Pallete*/
+/*
+Black:;
+white
+blue ocean:rgb(146,199,237)
+yellow rgb(254,246,72)
+green rgb(14,220,164)
+red 
+pink
+purple
+land-blue rgb(0,161,231)
+
+*/
+
+
+/*.c1:hover {color: rgb(0,161,231); background-color: rgb(0,161,231);}
+.c2:hover {color: rgb(254,246,72); background-color: rgb(254,246,72);}
+.c3:hover {color: rgb(249,101,91); background-color: rgb(249,101,91);}
+.c4:hover {color: rgb(132,104,214); background-color: rgb(132,104,214);}*/
+#projects-box h1 span {
+    /*color: transparent;*/
+}
+
+.c1 {text-shadow: -2px 2px 4px rgb(0,161,231);}
+.c2 {text-shadow: -2px 2px 4px rgb(254,246,72);}
+.c3 {text-shadow: -2px 2px 4px rgb(249,101,91);}
+.c4 {text-shadow: -2px 2px 4px rgb(132,104,214);}
+
+#projects-box h1 span:hover {
+    color: transparent;
+    /*text-shadow: none;*/
+}
+
+.off-canvas-content {
+    background-color: transparent;
+}
+
+/*#skrollr-body {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x:hidden;
+    overflow-y: hidden; 
+}*/
+
+
+.skrollable {
+    /*
+     * First-level skrollables are positioned relative to window
+     */
+    position:fixed;
+
+    /*
+     * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+     */
+    z-index:100;
+}
+
+.skrollr-mobile .skrollable {
+    /*
+        May cause issues on Android default browser (see #331 on GitHub).
+    */
+    position:absolute;
+}
+
+.skrollable .skrollable {
+    /*
+     * Second-level skrollables are positioned relative their parent skrollable
+     */
+    position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+    /*
+     * Third-level (and below) skrollables are positioned static
+     */
+    position:static;
+}
+
+/*TYPOGRAPHY*/
+.row .white-text    {
+    color: #fff !important;
+}
+
+/*Typography*/
+.row h1, .row h2, .row h3, .row h4, .row h5, p {
+    color:#000;
+    text-transform: uppercase;
+    line-height: normal;
+    font-family: 'Central Union Neon',sans-serif;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.serif {
+    /*font-family: serif;*/
+    font-family: 'NotoSerif-Italic',georgia,serif !important;
+    /*font-family: "NotoSerif-Italic",georgia;*/
+    text-transform: none !important;
+    /*font-style: italic !important;*/
+}
+
+.filled {
+    font-family: 'Central Union Filled',sans-serif !important;
+}
+
+.arvo {
+    font-family: 'Arvo', serif !important;
+}
+
+.row h1 {
+    letter-spacing: .2rem; font-size: 2.5rem;
+}
+
+.row h2 {
+    letter-spacing: .2rem;
+}
+
+.row h3 {
+    letter-spacing: .2rem;
+}
+
+.row h4 {
+}
+
+.row h5 {
+}
+
+.row h4.serif {
+    letter-spacing: .1rem;
+    line-height: 110%;
+}
+
+/*content elements*/
+#header {
+    /*background-color: #fff;*/
+    /*background-color: rgb(146,199,237);*/
+    /*background-color: rgba(203,230,251,0.7);*/
+    background-color: rgba(0,0,0,0.6);
+    padding: 5px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+#header h2 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    font-size: 0.2rem;
+    letter-spacing: 0.05rem;
+    /*color: rgb(146,199,237);
+    color: rgb(254,246,72);*/
+}
+
+.head-text {
+    position: relative;
+    float: right;
+    margin-left: 15px;
+}
+
+.head-text:first-child {
+    float: left;
+    margin-left: 5px;
+}
+
+#topLogo, #title2, #header {
+    max-width: 1300px;
+}
+
+.title-bar {
+    z-index: 1102 !important;
+} 
+
+.title-bar.is-at-top {
+    height: 40px !important;
+}
+
+.title-bar-title h1 {
+    margin-bottom: 0px;
+    font-size: 20px !important;
+    letter-spacing: 1px !important;
+}
+
+
+#title {
+    position: fixed;
+    text-align: right;
+    /*max-width: 100%;*/
+    margin-top: 5%;
+    z-index: 30;
+    top: 0px;
+}
+
+#title2 {
+    position: fixed;
+    text-align: left;
+    width: 100%;
+    margin-top: 5%;
+    z-index: 30;   
+}
+
+#title2 a {
+    color: #fff;
+}
+
+#title2 a:hover {
+    text-decoration: none !important;
+    text-shadow: -2px 2px 4px #e700a1;
+}
+
+/*background*/
+
+#master_container .row {
+    max-width: none;
+}
+
+#master_container {
+    font-family: 'Central Union Filled',sans-serif;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    /*max-width: 1300px;*/
+    margin: 0 auto;
+    overflow: hidden;
+ }
+
+#bg0-cont,
+#dan-fold-mobile-cont,
+#title-container,
+#projects-container,
+#resume-container,
+#about-container,
+#header-container
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 90;
+}
+
+#bg0-cont{
+    z-index: -10;
+}
+
+#dan-fold-mobile-cont {
+    z-index: 1;
+}
+
+#bg2-cont {
+    z-index: -12;
+    position: relative;
+}
+
+#bg0 {
+    position: fixed;
+    /*margin-top: -50%;*/
+    width: 130%;
+    height: 0;
+    /*background:url(../files/pattern1.png);*/
+    background:url(../files/dan/dan_fold.jpg);
+    /*background: url(/files/IMG_1710.JPG);*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 165.8%;
+    float: left;
+    display: none;
+    left: -30%;    
+}
+
+#dan-fold-mobile {
+    /*margin-top: 12px;*/
+    margin-left: -3%;
+    width: 110%;
+    height: 0;
+    background:url(../files/dan/dan_fold.jpg);
+    /*background: url(/files/IMG_1710.JPG);*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 110%;
+    float: left;
+}
+
+#title-container {
+    margin-top: -105%;
+    text-align: right;
+}
+
+.secondary #projects-container {    
+    margin-top: -85%;
+
+}
+
+#projects-container {    
+    z-index: 100;
+    margin-top: -59%;
+}
+
+.double-project-container {
+    background-color: #000;
+}
+
+.double-white-container {
+    background-color: #fff;
+}
+
+.up-headline-triangle, .end-triangle {    
+    width: 100%;
+    height: 0;
+    padding-left: 50%;
+    padding-bottom: 10%;
+    overflow: hidden;
+    z-index: 52;
+    margin: 0 auto;
+}
+
+.up-headline-triangle:after, .end-triangle:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-3000px;
+ }
+
+.up-headline-triangle:after {
+    border-left: 3000px solid transparent;
+    border-right: 3000px solid transparent;
+    border-bottom: 500px solid rgba(0,0,0,0.50);
+}
+
+.end-triangle:after {
+    border-left: 3000px solid black;
+    border-right: 3000px solid black;
+    border-bottom: 500px solid transparent;
+}
+
+.end-triangle.white:after {
+    border-left: 3000px solid white;
+    border-right: 3000px solid white;
+}
+
+.thumbnail {
+    position: relative;
+    margin-top: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+a img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    padding-top: 55%;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.7);
+    transition: all 0.8s ease;
+}
+
+.overlay:hover {
+    transition: all 0.8s ease;
+    opacity: 1;
+}
+
+.overlay-inset {
+    margin-top: -57%;
+    text-align: center !important;
+}
+
+.overlay-inset h2 {
+    color: black;
+}
+
+.overlay-inset h3 {
+    font-family: 'Arvo', serif;
+    text-align: left;
+    text-transform: none !important;
+    font-size: 1rem;
+    letter-spacing: 0px;  
+}
+
+.overlay-inset-top {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.overlay-inset-bottom {
+    bottom: 0px;
+    position: absolute;
+    padding-left: 10px;
+}
+
+/*Down pointing*/
+.down-headline-triangle {
+    width: 100%;
+    height: 0;
+    padding-left:50%;
+    padding-top: 10%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.secondary .down-headline-triangle:after {
+    border-top: 500px solid rgba(0,0,0,0);
+}
+
+.down-headline-triangle:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left:-3000px;
+    margin-top:-500px;
+    border-left: 3000px solid #000;
+    border-right: 3000px solid #000;
+    border-top: 500px solid rgba(0,0,0,0.50);
+}   
+
+.down-headline-triangle.white:after {
+    border-left: 3000px solid #fff;
+    border-right: 3000px solid #fff;
+}
+
+
+.text-box {
+    font-family: 'Arvo', serif;
+    padding: 10px;
+}
+
+.text-box h2, .text-box h3, .text-box h6, .text-box li, .text-box p {
+    /*color: #aaa !important;*/
+}
+
+.text-box h6, .text-box h3 {
+    font-family: 'Arvo', serif;
+    letter-spacing: 2px !important;
+    text-transform: none;
+}
+
+.text-box p {
+    font-family: 'Arvo', serif;
+    text-transform: none;
+}
+
+#projects-box {
+    text-align: center;
+}
+
+.proj-subhead {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.proj-subhead h2 {
+    color: #fff;
+
+}
+
+#about-box, #resume-box, #projects-box {
+    z-index: 1001;   
+    background-color: #fff;    
+}
+
+#about-text, #resume-text, #projects-text {
+    z-index: 1001;
+    text-align: center;
+    background-color: rgba(0,0,0,0.50);
+    /*padding-top: 40%;   */
+}
+
+#about-text h1, #resume-text h1, #projects-text h1 {
+    margin-bottom: 0;
+    line-height: 20%;
+    letter-spacing: 10px;
+    /*color: rgba(200,200,200,0.9);*/
+}
+
+.proj {
+    background-color: #000;
+}
+
+.offset2 {
+    margin-left: -50px;
+}
+
+.offset {
+    margin-left: -25px;
+}
+
+#bg1-cont, #dan-laugh-mobile-cont {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    left: -12%;
+}
+#bg1-cont {
+    z-index: -11;
+}
+
+#dan-laugh-mobile-cont {
+    /*display: none;*/
+}
+
+#dan-laugh-mobile {
+    margin-top: -10%;
+    width: 115%;
+    /*height: 0;*/
+    background: url(../files/dan/dan_laugh.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*padding-top: 220.3%;*/
+    padding-top: 75%;
+}
+
+#bg1 {
+    position: fixed;
+    /*margin-top: -50%;*/
+    width: 150%;
+    height: 0;
+    /*background:url(../files/dan/dan_laugh.jpg);*/
+    background:url(../files/pattern7.png);
+    background-repeat: repeat;
+    background-size: 300px 260px;
+    padding-top: 165.8%;    
+    display: none;    
+}
+
+.thumbnail.bubble {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 642px) {
+
+}
+
+@media only screen and (min-width: 40.063em) { 
+    #header h2 {
+        font-size: 1rem;
+    }
+
+    .head-text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .head-text:first-child {
+        margin-left: 10px;
+    }
+
+    .row h1 {
+        /*font-size: 40px;    */
+        font-size: 4.8rem;
+        letter-spacing: .4rem;
+    }
+
+    .row h2 {
+        /*font-size: 32px;*/
+        font-size: 1.2rem;
+        letter-spacing: .3rem;
+    }
+
+    .overlay-inset h2 {
+        font-size: 1.5rem;
+        letter-spacing: .3rem;   
+    }
+
+    .row h3 {
+        /*font-size: 26px;*/
+        font-size: 1.5rem;
+        letter-spacing: .4rem;
+    }
+
+    .overlay-inset h3 {
+        font-size: 1rem;
+        letter-spacing: 0px;        
+    }
+
+    .row h4 {
+        /*font-size: 20px;*/
+        font-size: 1.2rem;
+    }
+
+    .row h5 {
+        /*font-size: 16px;*/
+        font-size: 1rem; 
+    }
+
+    #bg0, #bg1  {display:block;}
+    #dan-fold-mobile {
+        background: transparent;
+    }
+    /*#projects {padding-bottom: 20%;}*/
+    #projects-below {padding-top: 30%;}
+    #projects-bottom-box {height: 0;padding-top: 0}
+    #meaningful {
+        margin-top: -20%;
+    }
+    #footer {
+        margin-bottom: 400px;
+    }
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) { 
+    #header h2 {
+        font-size: 2rem;
+    }
+
+    #projects-below {padding-top: 9%;}    
+    #master_container {
+        width: 100%;
+    }
+    #topLogo, #title2, #header {
+        max-width: 90%;
+    }
+    .row h1 {
+        font-size: 8.8rem;
+    }
+    
+    .row h2 {
+        font-size: 2rem;
+    }
+
+    .overlay-inset h2 {
+        font-size: 1.7rem !important;
+        /*letter-spacing: 1px !important;        */
+    }
+    .overlay-inset h3 {
+        font-size: 1.2rem !important;
+        letter-spacing: 1px !important;        
+    }
+
+} /* min-width 1025px, large screens */
+
+
+@media only screen and (min-width: 500px) { 
+
+}
+
+
+@media only screen and (max-width: 320px) { 
+    .row h1 {
+        /*font-size: 28px*/
+    }
+    .row h2 {
+        /*font-size: 26px;*/
+    }
+}
