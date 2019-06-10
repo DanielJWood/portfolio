@@ -36,7 +36,7 @@ Available for your custom data visualization and mapping needs for interactive, 
 
 * Design and develop visualizations, and story-telling features using a full suite of web development tools including D3.js, highcharts.js, mapbox.js, and more (see below). 
 * Write popular articles and blogs to supplement data visualizations.
-* Created “History of the Lightbulb” timeline, highest viewed article on the Energy.gov blog, along with more than 50 other visualizations.
+* Created “History of the Light Bulb” timeline, highest viewed article on the Energy.gov blog, along with more than 50 other visualizations.
 * Overhaul mapping and interactives on Energy.gov. 
   * Prioritize mobile responsive technology, due to rapidly increasing mobile usage. 
   * Create standardized methods, templates, and tools for rapid prototyping of data visualizations, version controlled through github.
